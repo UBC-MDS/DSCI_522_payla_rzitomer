@@ -21,8 +21,8 @@ step 1:
 step 2:
 - feature engineering
 - make a binary column based on points
-  - if 98 points or great then Classic rating
-  - if less than 98 not Classic
+  - if 98 points or greater then assign Classic rating
+  - if less than 98 points assign not Classic rating
 
 step 3:
 - convert categorical variables to format that can be used for decision trees
