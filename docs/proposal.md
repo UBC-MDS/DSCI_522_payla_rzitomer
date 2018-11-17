@@ -9,7 +9,7 @@ First 100 rows of data is here: https://github.com/UBC-MDS/DSCI_522_payla_rzitom
 
 #### 2. With that data set, identify a question you would like to ask from it that could be answered by some simple analysis and visualization (more on this below). State what kind of question it is (it should be one of the 6 types discussed in lecture 1).
 
-What are the strongest three predictors to indicate if a wine is a Classic(WineEnthusiast rating) wine?
+What are the strongest three predictors to indicate if a wine is a Classic(WineEnthusiast rating) wine?   
 type of question: predictive
 
 
