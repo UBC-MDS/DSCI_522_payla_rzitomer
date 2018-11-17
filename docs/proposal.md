@@ -1,22 +1,21 @@
 # Proposal
 
-1.Choose a public data set from the web that you are interested in to carry out a small data analysis. You may also use any data set we have previously worked with in MDS. Prove to us that you can load the data set into R or Python (this could be demonstrating by writing a script that downloads the data and saves a snippet of it, for example).
+#### 1. Choose a public data set from the web that you are interested in to carry out a small data analysis. You may also use any data set we have previously worked with in MDS. Prove to us that you can load the data set into R or Python (this could be demonstrating by writing a script that downloads the data and saves a snippet of it, for example).
 
-Data set:
-https://www.kaggle.com/zynicide/wine-reviews
+Data set: https://www.kaggle.com/zynicide/wine-reviews
 
 First 100 rows of data is here: https://github.com/UBC-MDS/DSCI_522_payla_rzitomer/blob/master/docs/wine_data_first_100_rows.csv. Downloaded using this script: https://github.com/UBC-MDS/DSCI_522_payla_rzitomer/blob/master/src/load_data.py
 
 
-2. With that data set, identify a question you would like to ask from it that could be answered by some simple analysis and visualization (more on this below). State what kind of question it is (it should be one of the 6 types discussed in lecture 1).
-
-type of question: predictive
+#### 2. With that data set, identify a question you would like to ask from it that could be answered by some simple analysis and visualization (more on this below). State what kind of question it is (it should be one of the 6 types discussed in lecture 1).
 
 What are the strongest three predictors to indicate if a wine is a Classic(WineEnthusiast rating) wine?
+type of question: predictive
 
-3. Make a plan of how you will analyze the data (report an estimate and confidence intervals? hypothesis test? classification with a decision tree?). Choose something you know how to do (report an estimate and confidence intervals, a two-group hypothesis), or will learn how to do in the first week of block 3 (ANOVA, classification with a decision tree).
 
-steps 1:
+#### 3. Make a plan of how you will analyze the data (report an estimate and confidence intervals? hypothesis test? classification with a decision tree?). Choose something you know how to do (report an estimate and confidence intervals, a two-group hypothesis), or will learn how to do in the first week of block 3 (ANOVA, classification with a decision tree).
+
+step 1:
 - import data/load data set from kaggle
 
 step 2:
@@ -45,7 +44,8 @@ step 8:
 - look at the top 3 predictors out of country, price, province, region, variety and winery
 
 
-4. Suggest how you might summarize the data to show this as a table or a number, as well as how you might show this as a visualization.
+
+#### 4. Suggest how you might summarize the data to show this as a table or a number, as well as how you might show this as a visualization.
 
 - look at accuracy score
 - look at the ranking of the predictors and find the top 3
