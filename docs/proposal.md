@@ -5,6 +5,8 @@
 Data set:
 https://www.kaggle.com/zynicide/wine-reviews
 
+First 100 rows of data is here: . Downloaded using this script: 
+
 
 2. With that data set, identify a question you would like to ask from it that could be answered by some simple analysis and visualization (more on this below). State what kind of question it is (it should be one of the 6 types discussed in lecture 1).
 
