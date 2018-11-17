@@ -10,7 +10,18 @@ https://www.kaggle.com/zynicide/wine-reviews
 
 type of question: predictive
 
-Can we use decision trees to predict if a wine has a WineEnthusiast rating above 90 point based on country, price, province, region, variety and winery?
+What are the strongest three predictors to indicate if a wine is a Classic(WineEnthusiast rating) wine?
+
+Can decision trees be used to predict if a wine has a WineEnthusiast rating above 90 points based on country, price, province, region, variety and winery with at least 90% accuracy?
+
+Can decision trees be used to predict if a wine has a WineEnthusiast rating above 98 points based on country, price, province, region, variety and winery with at least 90% accuracy?
+
+Can decision trees be used to predict if a wine has a WineEnthusiast rating above 98 points based on country, price, province, region, variety and winery with at least 90% accuracy?
+
+Can decision trees be used to predict if a wine has a WineEnthusiast rating of Classic based on country, price, province, region, variety and winery with at least 90% accuracy?
+
+Can decision trees be used to predict the WineEnthusiast rating based on country, price, province, region, variety and winery with at least 90% accuracy?
+
 
 3. Make a plan of how you will analyze the data (report an estimate and confidence intervals? hypothesis test? classification with a decision tree?). Choose something you know how to do (report an estimate and confidence intervals, a two-group hypothesis), or will learn how to do in the first week of block 3 (ANOVA, classification with a decision tree).
 
@@ -40,8 +51,8 @@ step 7:
 
 step 8:
 - evaluate a final accuracy score, if the accuracy is above some threshold to conclude that we can use the given inputs to predict the WineEnthusiast rating is above 90.
-
 - could we find a model that is accurate
+
 
 4. Suggest how you might summarize the data to show this as a table or a number, as well as how you might show this as a visualization.
 
