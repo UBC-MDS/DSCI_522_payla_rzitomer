@@ -5,8 +5,8 @@
 # makes dummy variables, makes target variable, and outputs the
 # cleaned dataframe to a csv.
 #
-# Usage: python load_data.py input_file output_file
-# Example usage: python load_data.py 'data/winemag-data-130k-v2.csv.zip' 'data/wine_data_cleaned.csv'
+# Usage: python src/load_data.py input_file output_file
+# Example usage: python src/load_data.py 'data/winemag-data-130k-v2.csv.zip' 'data/wine_data_cleaned.csv'
 
 import pandas as pd
 import argparse
@@ -20,12 +20,12 @@ args = parser.parse_args()
 def main():
     wine_data = pd.read_csv(args.input_file, index_col=0)
     wine_data_relev_features = wine_data.drop(
-        ['description', 'taster_name', 'taster_twitter_handle', 'title', 'designation', 'region_2', 'winery'], axis=1)
+        ['region_1','description', 'taster_name', 'taster_twitter_handle', 'title', 'designation', 'region_2', 'winery'], axis=1)
     wine_data_cleaned = wine_data_relev_features.dropna()
     wine_data_cleaned_with_dummies = pd.get_dummies(wine_data_cleaned)
     wine_data_cleaned_with_dummies['greater_than_90'] = wine_data_cleaned_with_dummies['points'] > 90
+    wine_data_cleaned_with_dummies = wine_data_cleaned_with_dummies.drop('points',axis=1)
     wine_data_cleaned_with_dummies.to_csv(args.output_file, index=False)
-
 
 
 if __name__ == '__main__':

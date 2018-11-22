@@ -25,11 +25,11 @@ portugal = wine_data_cleaned[wine_data_cleaned.country_Portugal==1]
 
 x = ['USA','France','Italy','Spain','Portugal']
 y = [100*sum(us.greater_than_90)/len(us),
- 100*sum(france.greater_than_90)/len(france),
- 100*sum(italy.greater_than_90)/len(italy),
- 100*sum(spain.greater_than_90)/len(spain),
- 100*sum(portugal.greater_than_90)/len(portugal)
-]
+     100*sum(france.greater_than_90)/len(france),
+     100*sum(italy.greater_than_90)/len(italy),
+     100*sum(spain.greater_than_90)/len(spain),
+     100*sum(portugal.greater_than_90)/len(portugal)
+    ]
 
 fig, ax = plt.subplots()
 
