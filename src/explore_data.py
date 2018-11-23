@@ -41,9 +41,9 @@ plt.axhline(100*sum(wine_data_cleaned.greater_than_90)/len(wine_data_cleaned),
             c='r', label="Overall Average")
 
 # Also plot an average
-ax.set_ylabel('Wines With a Rating > 90 Points (%)')
+ax.set_ylabel('Proportion of Wines With a Rating >= 90 Points (%)')
 ax.set_xlabel('Country')
-ax.set_title('Wine Quality for Top 5 Most Common Country')
+ax.set_title('Wine Quality for Top 5 Most Common Countries in the Dataset')
 ax.legend()
 
 plt.savefig(args.output_file_prefix + 'countries.png')
@@ -55,11 +55,11 @@ less_than = wine_data_cleaned[~wine_data_cleaned.greater_than_90]
 
 fig, ax = plt.subplots()
 plt.boxplot([less_than.price, greater.price],showfliers=False)
-plt.xticks([1, 2], ['<= 90', '> 90'])
+plt.xticks([1, 2], ['< 90', '>= 90'])
 
 ax.set_ylabel('Price')
 ax.set_xlabel('WineEnthusiast Rating')
-ax.set_title('Wine Quality by Price')
+ax.set_title('Price of Wine Segmented by Quality')
 
 plt.savefig(args.output_file_prefix + 'price_boxplot.png')
 
@@ -69,12 +69,12 @@ less_than = wine_data_cleaned[~wine_data_cleaned.greater_than_90]
 # Look at histogram of price < 100
 fig, ax = plt.subplots()
 
-less_than[less_than.price<100].price.hist(bins=20, label='<= 90')
-greater[greater.price<100].price.hist(bins=20, alpha=.8, label='> 90')
+less_than[less_than.price<100].price.hist(bins=20, label='< 90')
+greater[greater.price<100].price.hist(bins=20, alpha=.8, label='>= 90')
 
-ax.set_ylabel('Price')
-ax.set_xlabel('WineEnthusiast Rating')
-ax.set_title('Wine Quality by Price')
+ax.set_ylabel('Count')
+ax.set_xlabel('Bottle Price')
+ax.set_title('Price of Wine Segmented by Quality for Wine Cheaper than $100')
 ax.legend()
 
 plt.savefig(args.output_file_prefix + 'price_less_than_100_hist.png')
@@ -101,9 +101,9 @@ plt.axhline(100*sum(wine_data_cleaned.greater_than_90)/len(wine_data_cleaned),
             c='r', label="Overall Average")
 
 # Also plot an average
-ax.set_ylabel('Wines With a Rating > 90 Points (%)')
+ax.set_ylabel('Proportion of Wines With a Rating >= 90 Points (%)')
 ax.set_xlabel('Variety')
-ax.set_title('Wine Quality for Top 5 Most Common Varieties')
+ax.set_title('Wine Quality for Top 5 Most Common Varieties of Wine')
 ax.legend()
 
 plt.xticks(rotation=90)
