@@ -11,7 +11,7 @@ Downloaded using this script: https://github.com/UBC-MDS/DSCI_522_payla_rzitomer
 
 #### 2. With that data set, identify a question you would like to ask from it that could be answered by some simple analysis and visualization (more on this below). State what kind of question it is (it should be one of the 6 types discussed in lecture 1).
 
-What are the strongest three predictors that a consumer has access to that will indicate if a wine will receive more than 90 points on WineEnthusiast?   
+What are the strongest three predictors that a consumer has access to that will indicate if a wine will receive a WineEnthusiast rating of 90 or greater?
 Type of question: predictive
 
 
@@ -32,7 +32,7 @@ step 2:
 - make a binary column based on points as the dependent variable to be predicted
     - Make a column called `greater_than_90`
     - if the points column is 90 or greater then label the value for the row to be `True`
-    - if the points column is less than or equal to 90 points then label the value for the row to be `False`
+    - if the points column is less than 90 points then label the value for the row to be `False`
 
 step 3:
 - drop rows with Null values in them so they can be classified by the decision tree

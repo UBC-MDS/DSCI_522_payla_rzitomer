@@ -23,8 +23,8 @@ def main():
         ['region_1','description', 'taster_name', 'taster_twitter_handle', 'title', 'designation', 'region_2', 'winery'], axis=1)
     wine_data_cleaned = wine_data_relev_features.dropna()
     wine_data_cleaned_with_dummies = pd.get_dummies(wine_data_cleaned)
-    wine_data_cleaned_with_dummies['greater_than_90'] = wine_data_cleaned_with_dummies['points'] > 90
-    wine_data_cleaned_with_dummies = wine_data_cleaned_with_dummies.drop('points',axis=1)
+    wine_data_cleaned_with_dummies['greater_than_90'] = wine_data_cleaned_with_dummies['points'] >= 90
+    wine_data_cleaned_with_dummies = wine_data_cleaned_with_dummies.drop('points', axis=1)
     wine_data_cleaned_with_dummies.to_csv(args.output_file, index=False)
 
 

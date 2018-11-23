@@ -26,7 +26,7 @@ We wanted to use these ratings to determine what features make a wine particular
 Overview
 ========
 
-What are the strongest three predictors that a consumer has access to that will indicate if a wine will receive a WineEnthusiast rating above 90?
+What are the strongest three predictors that a consumer has access to that will indicate if a wine will receive a WineEnthusiast rating of 90 or greater?
 
 Initial Exploration
 ===================
