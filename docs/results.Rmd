@@ -40,7 +40,7 @@ The dataset came with the following features (all of the information below is fr
 > * Points: the number of points WineEnthusiast rated the wine on a scale of 1-100 (though they say they only post reviews for wines that score >=80)
   * Title: the title of the wine review, which often contains the vintage if you're interested in extracting that feature
 * Variety: the type of grapes used to make the wine (ie Pinot Noir)
-Description: a few sentences from a sommelier describing the wine's taste, smell, look, feel, etc.
+* Description: a few sentences from a sommelier describing the wine's taste, smell, look, feel, etc.
 * Country: the country that the wine is from
 * Province: the province or state that the wine is from
 * Region 1: the wine growing area in a province or state (ie Napa)
@@ -75,31 +75,31 @@ Finally, we changed the `points` column (where the rating is stored) into a bina
   
 ![](../results/viz_countries.png)
 
-Figure 1. 
+Figure 1. Wine Quality by Country
 
-  As we suspected, wine from France is more likely than average to be given a high-quality rating. Suprisingly, Italian wine is  worse than average. Note that the countries are ordered from left to right along the x-axis by how frequently they occur in the dataset. The US and France make a lot of wine, and they've clearly figured out how to do it well.
+  As we suspected, wine from France is more likely than average to be given a high-quality rating. Suprisingly, Italian wine is  worse than average. Note that the countries are ordered from left to right along the x-axis by how frequently they occur in the dataset. The US and France make more wine than any other country, and they've clearly figured out how to do it well.
 
   The other big factor that we suspected would correlate with wine quality was price. After all, you've probably never drank wine out of a bag or a box that you would classify as "excellent." Below we have boxplots of price for wines that were and weren't given a rating greater than or equal to 90:
 
 ![](../results/viz_price_boxplot.png)
 
-Figure 2. 
+Figure 2. Boxplot of Wine Price Segmented by Quality
 
-  As expected, the price of the higher-quality bottles is much higher than the price of the lower-quality ones. It is interesting that while lower-quality wine is almost always cheap, higher-quality wine has a much wider range of potential prices. While there are outlier bottles that are thousands of dollars, 25% of the good stuff is under $40. This led us to the question: if you find a cheap bottle of wine that WineEnthusiast has rated, is there a good chance its well-reviewed?
+  As expected, the average price of the higher-quality bottles is much higher than the average price of the lower-quality ones. It is interesting that, while lower-quality wine is almost always cheap, higher-quality wine has a much wider range of potential prices. While there are outlier bottles that are thousands of dollars, 25% of the good stuff is under $40. This led us to the question: if you find a cheap bottle of wine that WineEnthusiast has rated, is there a good chance its well-reviewed?
 
 Below we have a histogram for all wine cheaper than $100, again segemented by rating:
 
 ![](../results/viz_price_less_than_100_hist.png)
 
-Figure 3. 
+Figure 3. Histogram of Cheaper Wine Prices Segmented by Quality
 
-  As you can see, if you select a random bottle of cheap wine, particularly one under \$40, its very unlikely that it will be a high-quality one. Even though there is a good deal of cheap, high-quality wine, because almost all of the lower-quality wine is in that area between \$10 and \$40, lower-quality wine represents the vast majority of bottles in that price range.
+  As you can see, if you select a random bottle of cheap wine, particularly one under \$40, its very unlikely that it will be a high-quality one. Even though there is a good deal of cheap, high-quality wine, because almost all of the lower-quality wine costs between \$10 and \$40, lower-quality wine represents the vast majority of bottles in that price range.
 
   What about wine variety? Below we have the five varieties that appear most often in our dataset and what proportion of each were well-reviewed:
   
 ![](../results/viz_variety.png)
 
-Figure 4. 
+Figure 4. Wine Quality by Variety
 
 Pinot Noir fairs particularly well here.
 
@@ -107,13 +107,13 @@ While we were able to glean a lot of interesting information from plotting our d
 
 # Model 
 
-The model used was a decision tree and the software was the DecisionTreeClassifier module from scikit-learn <sup>6</sup>. The model was chosen because it can handle continuous and categorical data, the data had input and output pairs, the amount of data was less than 100k samples<sup>6</sup> and the researchers have experience using this model. The training of the model was run on 80% of our data and then tested on the remaining 20%. The max depth of the model was chosen based on the maximum testing accuracy between depth 2 and 50. The max depth of the model was the only hyperparameter adjusted. The maximum testing accuracy of the model is 76%. The final model was run with the complete data set and thus could not be tested so there is no final accuracy score provided for the model.
+The model used was a decision tree and the software was the DecisionTreeClassifier module from scikit-learn <sup>6</sup>. The model was chosen because it can handle continuous and categorical data, the data had input and output pairs, the amount of data was less than 100k samples<sup>6</sup> and the researchers have experience using this model. The training of the model was run on 80% of our data and then tested on the remaining 20%. The max depth of the model is chosen by automatically getting the maximum testing accuracy between depth 2 and 50. The max depth of the model was the only hyperparameter adjusted. The maximum testing accuracy of the model is 76%. The final model was run with the complete data set and thus could not be tested so there is no final accuracy score provided for the model.
 
 ![](../results/depth_decision.png)
 
-Figure 5. Results of the test accuracy ranging from depth 2 to 50. Max value depth was chosen as the hyperparameter  for the model. 
+Figure 5. Results of the test accuracy ranging from depth 2 to 50. Max value depth was chosen as the hyperparameter for the model. 
 
-To visualize the decision tree an image of depth 3 was generated. The decision tree is too large to print the entire model to an image, depth 3 was choose as an optimize size. Depth 4 was too large to fit within the report and depth 2 only has feature splits on price. 
+To visualize the decision tree an image of depth 3 was generated. The decision tree is too large to print the entire model to an image, so depth 3 was choose as an optimal size. Depth 4 was too large to fit within the report and depth 2 only has feature splits on price. 
 
 
 ![](../results/decision_tree_depth_3.png)
@@ -124,9 +124,9 @@ Figure 6. Decision tree at depth 3
 
 There were 1156 features analyzed in the analysis and the top 20 ranked features are show in figure 7. The features were ranked based on Gini Importance, a feature will be ranked higher if the classes of the split are more homogeneous. Price is the highest ranked parameter with a feature importance value of 0.7569, the next highest ranked feature is the country Austria with a value of 0.0165. The third best predictor is the grape variety Riesling with a feature value of 0.0135. There is a huge difference in the values between the top ranked feature and the second-best feature and less of a difference between the second and third predictor. The top three predictors are much stronger then the rest of the predictors shown in figure 7. All of the top three predictors appear in figure 6, which means they at least appear within depth 3 of the decision tree. 
 
-The feature ranking tells us the level of importance that the feature has within the model but does not tell us how the feature effects the model. For the feature of country_Austria it is unknown if this feature helps to classify the wine above 90 points or below. The same can be said about the variety_Riesling, where we do not know if this feature is contributing to lower or higher quality wine. A further analysis on these individual features would help to answer how they effect the model. It seems reasonable that the split at the root of the tree is when price <= 30.5 because in figure 3 you can see that the majority of the distribution for wine with a rating less than 90 points is between 0 and 30 dollars. Around this point there appears to be a clear splitting point between the two outcome categories. 
+The feature ranking tells us the level of importance that the feature has within the model but does not tell us how the feature effects the model. For example, the feature of country_Austria is on this list, but without further exploartion we don't know if being from Australia means a wine is more or less likely to receive an excellent rating. The same can be said about the variety_Riesling. A further analysis on these individual features would help to answer how they effect the model. In many cases, we can pair feature importance with our exploratory analysis to see the direction of these splits; in particular, if the split at the root of the tree - price <= 30.5 - is True then the wine is much more likely to be categorized lower quality. As you can see from figure 3, the majority of the distribution for wine with a rating less than 90 points is between 0 and 30 dollars. Around this point there appears to be a clear splitting point between the two outcome categories, and this is borne out by our model. 
 
-Based on our analysis the best feature in determining the quality of wine is price. This feature was ranked much higher than the rest of the features. Unfortunately, with this analysis we can not make direct statements like if you buy a wine from Austria it will be excellent, but with the exploratory analysis (figure 2 and figure 3) and decision tree (figure 6) it is reasonable to say if you buy a bottle of wine over $30.50 it may be of excellent quality. 
+Based on our analysis the best feature in determining the quality of wine is price. This feature was ranked much higher than the rest of the features. Unfortunately, with this analysis we can not make direct statements like if you buy a wine from Austria it will be excellent, but with the exploratory analysis (figure 2 and figure 3) and decision tree (figure 6) it is reasonable to say if you buy a bottle of wine over $30.50 it has a better chance of being of excellent quality. 
 
 
 ![](../results/results_rank_plots.png)
