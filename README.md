@@ -77,6 +77,6 @@ step 7:
 
 
 
-References
+### References
 
-1. https://www.winemag.com/
+1. WineEnthusiast https://www.winemag.com/. Accessed November 2018
