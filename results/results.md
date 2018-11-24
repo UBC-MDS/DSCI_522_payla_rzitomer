@@ -67,36 +67,53 @@ We also turned each categorical features into a series binary columns, one for e
 
 We got rid of any observations with NULL values, which wasn't a large proportion of the dataset (&lt;7%).
 
-Finally, we changed the `points` column to a binary columnn that was True if the wine was given a rating of at least 90 ("Excellent") and False if it was given a rating lower than that.
+Finally, we changed the `points` column (where the rating is stored) into a binary columnn that was `True` if the wine was given a rating of at least 90 ("Excellent") and `False` if it was given a rating lower than that.
 
 Initial Data Exploration
 ========================
 
 Before running our model, we explored our cleaned dataset to try to get a better sense of the data and anticipate what features would be important.
 
-When we pictured high-quality wine, the first things that popped in our head was that it was from some place fancy like France or Italy. So we thought that the country variables would be particularly important. Below is the proportion of wine from the five countries with the most wine in our dataset.
+When we pictured high-quality wine, the first things that popped in our head was that it was a fancy vineyard in a place like France or Italy. So we thought that the different country variables would be particularly important. Below is the proportion of "excellent" wines from the five countries with the most wine in our dataset.
 
 ![](viz_countries.png)
 
+As we suspected, wine from France is more likely than average to be given a high-quality rating. Suprisingly, Italian wine is worse than average. Note that the countries are ordered from left to right along the x-axis by how frequently they occur in the dataset. The US and France make a lot of wine, and they've clearly figured out how to do it well.
+
+The other big factor that we suspected would correlate with wine quality was price. After all, you've probably never drank wine out of a bag or a box that you would classify as "excellent." Below we have boxplots of price for wines that were and weren't given a rating greater than or equal to 90:
+
 ![](viz_price_boxplot.png)
+
+As expected, the price of the higher-quality bottles is much higher than the price of the lower-quality ones. It is interesting that while lower-quality wine is almost always cheap, higher-quality wine has a much wider range of potential prices. While there are outlier bottles that are thousands of dollars, 25% of the good stuff is under $40. This led us to the question: if you find a cheap bottle of wine that WineEnthusiast has rated, is there a good chance its well-reviewed?
+
+Below we have a histogram for all wine cheaper than $100, again segemented by rating:
 
 ![](viz_price_less_than_100_hist.png)
 
+As you can see, if you select a random bottle of cheap wine, particularly one under $40, its very unlikely that it will be a high-quality one. Even though there is a good deal of cheap, high-quality wine, because almost all of the lower-quality wine is in that area between $10 and $40, lower-quality wine represents the vast majority of bottles in that price range.
+
+What about wine variety? Below we have the five varieties that appear most often in our dataset and what proportion of each were well-reviewed:
+
 ![](viz_variety.png)
+
+Pinot Noir fairs particularly well here.
+
+While we were able to glean a lot of interesting information from plotting our data, we needed a model to definitively determine what features would be most useful in predicting if a wine is high-quality.
 
 Model
 =====
 
-Critique/Limitations
-====================
+Limitations
+===========
 
--   The dataset we used is roughly half the data (130k/260k) that WineEnthusiast has reviewed as of 11/23/2018 (<https://www.winemag.com/?s>=&drink\_type=wine), ideally we'd train on the whole dataset. The data was pulled a year ago (11/2017) and might be due for an update.
+-   The dataset we used contains roughly half of all WineEnthusiast reviews (130k/260k) as of 11/23/2018 (<https://www.winemag.com/?s>=&drink\_type=wine), ideally we'd train our model on the whole dataset. This dataset was pulled a year ago (11/2017) and might be due for an update.
+-   WineEnthusiast magazine only rates wine that it views as very good (80+), so our model and conclusions do not generalize to all wines.
 
 Next Steps/Extensions
 =====================
 
--   Look to tell a more causal story (e.g. everyone in a given region could do things in the same way)
--   Personalized wine ratings
+-   We'd like to be able to train a model that would measure quality *depending on an individual's taste*
+-   We'd like to be able tell a more causal story (e.g. "this bottle is better because it was grown in France"). Thats hard to do with the given dataset, we can only see if the factors correlate with the outcome.
 
 ------------------------------------------------------------------------
 
