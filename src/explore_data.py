@@ -1,4 +1,4 @@
-# load_data.py
+# explore_data.py
 # Richie Zitomer and Ayla Pearson, Nov 2018
 #
 # This script loads in the data, gets rid of irrelevant features,
