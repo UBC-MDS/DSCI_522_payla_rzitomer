@@ -3,17 +3,25 @@
 
 ## Overview
 
-WineEnthusiast<sup>1</sup> is a magazine that reviews wines and provides a score based off of a taste test. This analysis evaluated WineEnthusiast<sup>1</sup> rating data with a machine learning algorithm to evaluate the importance of price, country, province and country on ratings greater than or equal to 90 points. A binary tree model was used to evaluate the highest valued parameters. The threshold of 90 points was chosen as it is the line between very good and excellent wine.
+WineEnthusiast<sup>1</sup> is a magazine that reviews wines and provides a score based off of a taste test. This analysis evaluated WineEnthusiast<sup>1</sup> rating data with a machine learning algorithm to evaluate the importance of price, country, province and country on ratings greater than or equal to 90 points. A decision tree model was used to evaluate the highest valued parameters. The threshold of 90 points was chosen as it is the line between very good and excellent wine.
 
 ## Scripts
 
 To reproduce this analysis run the scripts in the order shown:
 
-python src/load_data.py data/winemag-data-130k-v2.csv.zip data/wine_data_cleaned.csv  
-python src/explore_data.py data/wine_data_cleaned.csv results/viz_  
-python src/decision_tree.py data/wine_data_cleaned.csv results/rank.csv  
-python src/result_plots.py results/rank.csv results/results_  
-Rscript -e "rmarkdown::render('docs/results.Rmd')"  
+python src/load_data.py input_file output_file   
+python src/explore_data.py input_file output_file   
+python src/decision_tree.py input_file output_file     
+python src/result_plots.py input_file output_file     
+Rscript -e "rmarkdown::render('output_file')"   
+
+Example of the scripts with the file names from the repo:    
+
+python src/load_data.py data/winemag-data-130k-v2.csv.zip data/wine_data_cleaned.csv    
+python src/explore_data.py data/wine_data_cleaned.csv results/viz_    
+python src/decision_tree.py data/wine_data_cleaned.csv results/rank.csv     
+python src/result_plots.py results/rank.csv results/results_     
+Rscript -e "rmarkdown::render('docs/results.Rmd')"     
 
 
 ## Proposal
