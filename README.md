@@ -10,9 +10,9 @@ WineEnthusiast<sup>1</sup> is a magazine that reviews wines and provides a score
 To reproduce this analysis run the scripts in the order shown:
 
 python src/load_data.py input_file output_file   
-python src/explore_data.py input_file output_file   
+python src/explore_data.py input_file output_folder     
 python src/decision_tree.py input_file output_file     
-python src/result_plots.py input_file output_file     
+python src/result_plots.py input_file output_folder        
 Rscript -e "rmarkdown::render('output_file')"   
 
 Example of the scripts with the file names from the repo:    
