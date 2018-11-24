@@ -9,11 +9,12 @@ WineEnthusiast<sup>1</sup> is a magazine that reviews wines and provides a score
 
 To reproduce this analysis run the scripts in the order shown:
 
-python src/load_data.py data/winemag-data-130k-v2.csv.zip data/wine_data_cleaned.csv
-python src/explore_data.py data/wine_data_cleaned.csv results/viz_
-python src/decision_tree.py data/wine_data_cleaned.csv results/rank.csv
-python src/result_plots.py results/rank.csv results/results_
-Rscript -e "rmarkdown::render('docs/results.Rmd')"
+python src/load_data.py data/winemag-data-130k-v2.csv.zip data/wine_data_cleaned.csv  
+python src/explore_data.py data/wine_data_cleaned.csv results/viz_  
+python src/decision_tree.py data/wine_data_cleaned.csv results/rank.csv  
+python src/result_plots.py results/rank.csv results/results_  
+Rscript -e "rmarkdown::render('docs/results.Rmd')"  
+
 
 ## Proposal
 
