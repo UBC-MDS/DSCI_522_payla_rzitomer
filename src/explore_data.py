@@ -1,4 +1,4 @@
-# load_data.py
+# explore_data.py
 # Richie Zitomer and Ayla Pearson, Nov 2018
 #
 # This script loads in the data, gets rid of irrelevant features,
@@ -17,7 +17,7 @@ parser.add_argument('output_file_prefix')
 args = parser.parse_args()
 
 # Load data
-wine_data_cleaned = pd.read_csv(args.input_file, index_col=0)
+wine_data_cleaned = pd.read_csv(args.input_file)
 
 ## Look at by country
 france = wine_data_cleaned[wine_data_cleaned.country_France==1]
@@ -86,7 +86,7 @@ cabernet_sauvignon = wine_data_cleaned[wine_data_cleaned['variety_Cabernet Sauvi
 red_blend = wine_data_cleaned[wine_data_cleaned['variety_Red Blend']==1]
 bordeaux_style_red_blend = wine_data_cleaned[wine_data_cleaned['variety_Bordeaux-style Red Blend']==1]
 
-x = ['Pinot Noir','Chardonnay','Caberney Sauvignon','Red Blend','Bordeaux Style Red Blend']
+x = ['Pinot Noir','Chardonnay','Cabernet Sauvignon','Red Blend','Bordeaux-Style Red Blend']
 y = [100*sum(pinot_noir.greater_than_90)/len(pinot_noir),
      100*sum(chardonnay.greater_than_90)/len(chardonnay),
      100*sum(cabernet_sauvignon.greater_than_90)/len(cabernet_sauvignon),
