@@ -257,9 +257,9 @@ Based on our analysis the best feature in determining the quality of
 wine is price. This feature was ranked much higher than the rest of the
 features. Unfortunately, with this analysis we can not make direct
 statements like if you buy a wine from Austria it will be excellent, but
-with the exploratory analysis (figure 3) and decision tree (figure 6) it
-is reasonable to say if you buy a bottle of wine over $30.50 it may be
-of excellent quality.
+with the exploratory analysis (figure 2 and figure 3) and decision tree
+(figure 6) it is reasonable to say if you buy a bottle of wine over
+$30.50 it may be of excellent quality.
 
 ![](../results/results_rank_plots.png)
 
@@ -325,4 +325,5 @@ Michel, V. and Thirion, B. and Grisel, O. and Blondel, M. and
 Prettenhofer, P. and Weiss, R. and Dubourg, V. and Vanderplas, J. and
 Passos, A. and Cournapeau, D. and Brucher, M. and Perrot, M. and
 Duchesnay, E.}, journal={Journal of Machine Learning Research},
-volume={12}, pages={2825–2830}, year={2011} } </sub>
+volume={12}, pages={2825–2830}, year={2011} }
+<https://scikit-learn.org/stable/index.html> </sub>

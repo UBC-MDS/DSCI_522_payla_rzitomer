@@ -126,7 +126,7 @@ There were 1156 features analyzed in the analysis and the top 20 ranked features
 
 The feature ranking tells us the level of importance that the feature has within the model but does not tell us how the feature effects the model. For the feature of country_Austria it is unknown if this feature helps to classify the wine above 90 points or below. The same can be said about the variety_Riesling, where we do not know if this feature is contributing to lower or higher quality wine. A further analysis on these individual features would help to answer how they effect the model. It seems reasonable that the split at the root of the tree is when price <= 30.5 because in figure 3 you can see that the majority of the distribution for wine with a rating less than 90 points is between 0 and 30 dollars. Around this point there appears to be a clear splitting point between the two outcome categories. 
 
-Based on our analysis the best feature in determining the quality of wine is price. This feature was ranked much higher than the rest of the features. Unfortunately, with this analysis we can not make direct statements like if you buy a wine from Austria it will be excellent, but with the exploratory analysis (figure 3) and decision tree (figure 6) it is reasonable to say if you buy a bottle of wine over $30.50 it may be of excellent quality. 
+Based on our analysis the best feature in determining the quality of wine is price. This feature was ranked much higher than the rest of the features. Unfortunately, with this analysis we can not make direct statements like if you buy a wine from Austria it will be excellent, but with the exploratory analysis (figure 2 and figure 3) and decision tree (figure 6) it is reasonable to say if you buy a bottle of wine over $30.50 it may be of excellent quality. 
 
 
 ![](../results/results_rank_plots.png)
@@ -172,6 +172,6 @@ Table 2. Top three ranked features
  volume={12},
  pages={2825--2830},
  year={2011}
-}
+} https://scikit-learn.org/stable/index.html
 </sub>
 
