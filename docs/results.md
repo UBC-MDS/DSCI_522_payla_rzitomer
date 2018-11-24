@@ -37,14 +37,14 @@ Why did we choose this exact question? Here, adapted from their website,
 is WineEnthusiast’s rating scale (rating names and descriptions from
 WineEnthusiast):
 
-| Number   | Rating     | Description                                             |
-| -------- | ---------- | ------------------------------------------------------- |
-| 98â100 | Classic    | The pinnacle of quality.                                |
-| 94â97  | Superb     | A great achievement.                                    |
-| 90â93  | Excellent  | Highly recommended.                                     |
-| 87â89  | Very Good  | Often good value; well recommended.                     |
-| 83â86  | Good       | Suitable for everyday consumption; often good value.    |
-| 80â82  | Acceptable | Can be employed in casual, less-critical circumstances. |
+| Number | Rating     | Description                                             |
+| ------ | ---------- | ------------------------------------------------------- |
+| 98-100 | Classic    | The pinnacle of quality.                                |
+| 94-97  | Superb     | A great achievement.                                    |
+| 90-93  | Excellent  | Highly recommended.                                     |
+| 87-89  | Very Good  | Often good value; well recommended.                     |
+| 83-86  | Good       | Suitable for everyday consumption; often good value.    |
+| 80-82  | Acceptable | Can be employed in casual, less-critical circumstances. |
 
 Table 1. Rating scale from WineEnthusiast. Products deemed Unacceptable
 (receiving a rating below 80 points) are not reviewed.<sup>4</sup>
@@ -114,8 +114,9 @@ or less captured in a more accessible way in the `country` and the
 
 We also turned each categorical features into a series binary columns,
 one for each level of the feature. We did this because we were using a
-decision tree classifier, and its implementation in scikit-learn
-requires features to be turned into dummy variables.
+decision tree classifier, and its implementation in
+scikit-learn<sup>6</sup> requires features to be turned into dummy
+variables.
 
 We got rid of any observations with NULL values, which wasn’t a large
 proportion of the dataset (\<7%).
@@ -196,27 +197,28 @@ features would be most useful in predicting if a wine is high-quality.
 
 # Model
 
-The type of model chosen for this analysis was a decision tree and
-DecisionTreeClassifier from scikit-learn <sup>6</sup> was used. The
-model was choosen because it can handle continous and categorical data,
-the data set had input and output pairs, the amount of data was less
-than 100k and the researchers have experience using this model. The
-parameters being evaluated were price, country, province and variety.
-Country was split up to each of the countries within the category, the
-same was done for provience and variety. In total there are 1156
-parameters being analzyed in this analysis. The training of the model
-was run on 80% of our data and then tested occured on the remaining 20%
-of the data set. The max depth of the model was chosen based on the
-maximum testing accuacy between depth 2 and 50.
+The model used was a decision tree and the software was the
+DecisionTreeClassifier module from scikit-learn <sup>6</sup>. The model
+was chosen because it can handle continuous and categorical data, the
+data had input and output pairs, the amount of data was less than 100k
+samples<sup>6</sup> and the researchers have experience using this
+model. The training of the model was run on 80% of our data and then
+tested on the remaining 20%. The max depth of the model was chosen based
+on the maximum testing accuracy between depth 2 and 50. The max depth of
+the model was the only hyperparameter adjusted. The maximum testing
+accuracy of the model is 76%. The final model was run with the complete
+data set and thus could not be tested so there is no final accuracy
+score provided for the model.
 
 ![](../results/depth_decision.png)
 
-Figure 5. Plot of the test accuracy from depth 2 to depth 50
+Figure 5. Results of the test accuracy ranging from depth 2 to 50. Max
+value depth was chosen as the hyperparameter for the model.
 
-The decision tree was to large to print the entire tree to screen, here
-is a view of depth 3. It seems resonable that the split at the root is
-when price \<= 30.5 which relates back to figure 3, where there is a
-visible difference in the distributions of the groups around 30.
+To visualize the decision tree an image of depth 3 was generated. The
+decision tree is too large to print the entire model to an image, depth
+3 was choose as an optimize size. Depth 4 was too large to fit within
+the report and depth 2 only has feature splits on price.
 
 ![](../results/decision_tree_depth_3.png)
 
@@ -224,32 +226,53 @@ Figure 6. Decision tree at depth 3
 
 # Conclusion
 
-There were 1156 parameters analzyed in the analysis and the top 20 have
-been plotted to make the analysis of results resonable.The parameter
-were ranked based on Gini Importance, a feature will be ranked higher if
-the results of the split are more homogeneous. Price is the highest
-ranked parameter with a feature importance value of 0.7569, the next
-highest ranked parameter is the country Austria with a value of 0.0165.
-There is a huge difference in the values between the top ranked
-predictor and the second best predictor. The third best predictor is the
-grape variety Riesling with a feature value of 0.0135. There is less of
-a difference between the second and third predictor.These top 3
-predictors are much stronger then the rest of the predictors shown in
-figure 7. All of the top 3 predictors appear in figure 6, which means
-they appear within depth 3 of the decision tree.
+There were 1156 features analyzed in the analysis and the top 20 ranked
+features are show in figure 7. The features were ranked based on Gini
+Importance, a feature will be ranked higher if the classes of the split
+are more homogeneous. Price is the highest ranked parameter with a
+feature importance value of 0.7569, the next highest ranked feature is
+the country Austria with a value of 0.0165. The third best predictor is
+the grape variety Riesling with a feature value of 0.0135. There is a
+huge difference in the values between the top ranked feature and the
+second-best feature and less of a difference between the second and
+third predictor. The top three predictors are much stronger then the
+rest of the predictors shown in figure 7. All of the top three
+predictors appear in figure 6, which means they at least appear within
+depth 3 of the decision tree.
 
-| Parameter         | Feature Value |
-| ----------------- | ------------- |
-| price             | 0.7569        |
-| country\_Austria  | 0.0165        |
-| variety\_Riesling | 0.0135        |
+The feature ranking tells us the level of importance that the feature
+has within the model but does not tell us how the feature effects the
+model. For the feature of country\_Austria it is unknown if this feature
+helps to classify the wine above 90 points or below. The same can be
+said about the variety\_Riesling, where we do not know if this feature
+is contributing to lower or higher quality wine. A further analysis on
+these individual features would help to answer how they effect the
+model. It seems reasonable that the split at the root of the tree is
+when price \<= 30.5 because in figure 3 you can see that the majority of
+the distribution for wine with a rating less than 90 points is between 0
+and 30 dollars. Around this point there appears to be a clear splitting
+point between the two outcome categories.
 
-Table 2. Top 3 Predictors
+Based on our analysis the best feature in determining the quality of
+wine is price. This feature was ranked much higher than the rest of the
+features. Unfortunately, with this analysis we can not make direct
+statements like if you buy a wine from Austria it will be excellent, but
+with the exploratory analysis (figure 3) and decision tree (figure 6) it
+is reasonable to say if you buy a bottle of wine over $30.50 it may be
+of excellent quality.
 
 ![](../results/results_rank_plots.png)
 
-Figure 7. Plot of the top 20 predictors and a zoomed in view of the top
-predictors with price removed.
+Figure 7. Plot of the top 20 features and a zoomed in view of the top
+features with price removed.
+
+| Feature           | Feature Ranking Value |
+| ----------------- | --------------------- |
+| price             | 0.7569                |
+| country\_Austria  | 0.0165                |
+| variety\_Riesling | 0.0135                |
+
+Table 2. Top three ranked features
 
 # Limitations
 
@@ -268,7 +291,9 @@ predictors with price removed.
   - We’d like to be able tell a more causal story (e.g. “this bottle is
     better because it was grown in France”). Thats hard to do with the
     given dataset, we can only see if the factors correlate with the
-    outcome.
+    outcome. Potentially a regression analysis on the top features would
+    help to determine if the feature has a positive or negative
+    correlation.
 
 -----
 
@@ -278,15 +303,15 @@ predictors with price removed.
 Retrieved November 22, 2018, from BrainyQuote.com Web site:
 <https://www.brainyquote.com/quotes/robert_louis_stevenson_155195></sub>
 
-<sub> 2 Covel, Simona. âWine Enthusiast Looks to Win Over a Wider
-Audience.â The Wall Street Journal, Dow Jones & Company, 3 Oct. 2008,
+<sub> 2 Covel, Simona. Wine Enthusiast Looks to Win Over a Wider
+Audience. The Wall Street Journal, Dow Jones & Company, 3 Oct. 2008,
 www.wsj.com/articles/SB122290564075496371.</sub>
 
 <sub> 3 Thoutt, Z. (2017, November). Wine Reviews, Version 4. Retrieved
 November 15, 2018 from <https://www.kaggle.com/zynicide/wine-reviews>
 </sub>
 
-<sub> 4 âThe Wine Enthusiast Buying Guide.â WineEnthusiast
+<sub> 4 The Wine Enthusiast Buying Guide. WineEnthusiast
 www.winemag.com, Retrieved November 15, 2018 from
 www.winemag.com/wp-content/uploads/PDFs/Tasting/AboutTheBuyingGuide.pdf.</sub>
 
