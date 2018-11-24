@@ -17,7 +17,7 @@ parser.add_argument('output_file_prefix')
 args = parser.parse_args()
 
 # Load data
-wine_data_cleaned = pd.read_csv(args.input_file, index_col=0)
+wine_data_cleaned = pd.read_csv(args.input_file)
 
 ## Look at by country
 france = wine_data_cleaned[wine_data_cleaned.country_France==1]
