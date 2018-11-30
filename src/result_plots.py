@@ -9,10 +9,11 @@
 # Usage: python src/result_plots.py input_file output_file_directory
 # Example: python src/result_plots.py results/rank.csv results/
 
+#Python Version 3.7.0
 
-import pandas as pd
-import matplotlib.pyplot as plt
-import argparse
+import pandas as pd #Version 0.23.4
+import matplotlib.pyplot as plt #Version 2.2.3
+import argparse #Version 1.1
 
 parser = argparse.ArgumentParser()
 parser.add_argument('input_file')

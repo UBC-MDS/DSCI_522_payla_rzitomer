@@ -11,16 +11,15 @@
 # Usage: python src/decision_tree.py input_file output_file
 # Example: python src/decision_tree.py data/wine_data_cleaned.csv results/rank.csv
 
+# Python Version 3.7.0
 
-import pandas as pd
-import numpy as np
-import argparse
-
-import matplotlib.pyplot as plt
-import graphviz 
-
-from sklearn.tree import DecisionTreeClassifier, export_graphviz
-from sklearn.model_selection import train_test_split 
+import pandas as pd  #Version 0.23.4
+import numpy as np #Version 1.15.1
+import argparse #Version 1.1
+import matplotlib.pyplot as plt #Version 2.2.3
+import graphviz #Version 0.8.4
+from sklearn.tree import DecisionTreeClassifier, export_graphviz #Version 0.19.2
+from sklearn.model_selection import train_test_split #Version 0.19.2
 
 
 parser = argparse.ArgumentParser()
@@ -30,7 +29,6 @@ args = parser.parse_args()
 
 
 def main():
-    
     # reads in cleaned csv file, which is an input to the function
     data = pd.read_csv(args.input_file)
     
@@ -46,18 +44,21 @@ def main():
     Xtrain, Xtest, ytrain, ytest = train_test_split(X,y,test_size=0.2)
     
         
-    #generates the plot of test accuracy vs max depth for the range of 2 to 50 in steps of 2
+    #generates the plot of test and training accuracy vs max depth for the range of 2 to 50 in steps of 2
     test_accuracy = []
+    train_accuracy = []
     depths = range(2, 50, 2)
     for max_depth in depths:      
         model_training = model_fit(Xtrain, ytrain, depth=max_depth)
         test_accuracy.append(model_training.score(Xtest,ytest))
+        train_accuracy.append(model_training.score(Xtrain,ytrain))
         
     plt.plot(depths, test_accuracy, label = "Test")
+    plt.plot(depths, train_accuracy, label = "Training")
     plt.xlabel("Tree Depth")
     plt.ylabel("Accuracy")
     plt.legend()
-    plt.title("Decision Tree Test Accuracy from Depth 2 to 50")
+    plt.title("Decision Tree Accuracies from Depth 2 to 50")
     plt.savefig("results/depth_decision.png");
     
     #finds the depth with the highest accurac
@@ -95,7 +96,7 @@ def model_fit(inputs, output, depth=None):
     fits the decision tree model with an input, output and depth. Depth is an optional
     parameter, if not include it chooses the default value for DecisionTreeClassifier
     '''
-    model = DecisionTreeClassifier(max_depth=depth)
+    model = DecisionTreeClassifier(max_depth=depth, random_state = 10)
     model.fit(inputs, output)
     return model
     
