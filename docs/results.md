@@ -196,6 +196,7 @@ Limitations
 
 -   The dataset we used contains roughly half of all WineEnthusiast reviews (130k/260k) as of 11/23/2018 (<https://www.winemag.com/?s>=&drink\_type=wine), ideally we'd train our model on the whole dataset. This dataset was pulled a year ago (11/2017) and might be due for an update.
 -   WineEnthusiast magazine only rates wine that it views as very good (80+), so our model and conclusions do not generalize to all wines.
+-   Some tasters may rate wines differently than others. We would eventually like to control for who reviewed the wine.
 
 Next Steps/Extensions
 =====================
