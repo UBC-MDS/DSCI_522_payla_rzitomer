@@ -114,13 +114,13 @@ Model
 
 The model used was a decision tree and the software was the DecisionTreeClassifier module from scikit-learn <sup>6</sup>. The model was chosen because it can handle continuous and categorical data, the data had input and output pairs, the amount of data was less than 100k samples<sup>6</sup> and the researchers have experience using this model. The training of the model was run on 80% of our data and then tested on the remaining 20%. The max depth of the model is chosen by automatically getting the maximum testing accuracy between depth 2 and 50. The max depth of the model was the only hyperparameter adjusted. The maximum testing accuracy of the model is 76%. The final model was run with the complete data set and thus could not be tested so there is no final accuracy score provided for the model.
 
-![](../results/depth_decision.png)
+![](../results/model_depth_decision.png)
 
 Figure 5. Results of the test accuracy ranging from depth 2 to 50. Max value depth was chosen as the hyperparameter for the model.
 
 To visualize the decision tree an image of depth 3 was generated. The decision tree is too large to print the entire model to an image, so depth 3 was choose as an optimal size. Depth 4 was too large to fit within the report and depth 2 only has feature splits on price.
 
-![](../results/decision_tree_depth_3.png)
+![](../results/model_decision_tree_depth_3.png)
 
 Figure 6. Decision tree at depth 3
 

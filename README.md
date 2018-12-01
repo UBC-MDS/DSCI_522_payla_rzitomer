@@ -25,8 +25,8 @@ Example of the scripts with the file names from the repo:
 ```{bash}
 python src/load_data.py data/winemag-data-130k-v2.csv.zip data/wine_data_cleaned.csv    
 python src/explore_data.py data/wine_data_cleaned.csv results/viz_    
-python src/decision_tree.py data/wine_data_cleaned.csv results/    
-python src/result_plots.py results/rank.csv results/results_     
+python src/decision_tree.py data/wine_data_cleaned.csv results/model_    
+python src/result_plots.py results/model_rank.csv results/results_     
 Rscript -e "rmarkdown::render('docs/results.Rmd')"     
 ```
 

@@ -7,7 +7,7 @@
 
 
 # Usage: python src/result_plots.py input_file output_file_directory
-# Example: python src/result_plots.py results/rank.csv results/
+# Example: python src/result_plots.py results/model_rank.csv results/
 
 #Python Version 3.7.0
 

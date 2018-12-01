@@ -9,7 +9,7 @@
 
 
 # Usage: python src/decision_tree.py input_file output_folder
-# Example: python src/decision_tree.py data/wine_data_cleaned.csv results/
+# Example: python src/decision_tree.py data/wine_data_cleaned.csv results/model_
 
 # Python Version 3.7.0
 
@@ -77,7 +77,7 @@ def main():
 
     graph = graphviz.Source(dot_data) 
     graph.format = 'png'
-    graph.render("decision_tree_depth_3", directory = args.output_file_prefix, view=True) 
+    graph.render(args.output_file_prefix + "decision_tree_depth_3") 
     
     # creates list of feature ranking values
     rank_parameters = model_final.feature_importances_
