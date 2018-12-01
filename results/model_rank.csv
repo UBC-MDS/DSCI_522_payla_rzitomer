@@ -1,0 +1,1157 @@
+,predictor,rank_value
+0,price,0.7805614992694231
+1,country Argentina,0.0006676335427523479
+2,country Armenia,0.0
+3,country Australia,0.0016133343474685545
+4,country Austria,0.01719025149598184
+5,country Bosnia and Herzegovina,0.0
+6,country Brazil,4.7060764616783815e-05
+7,country Bulgaria,0.0004003483674905896
+8,country Canada,0.0005045149176800822
+9,country Chile,0.0007609224155888789
+10,country China,0.0
+11,country Croatia,0.00019826860285909962
+12,country Cyprus,0.0
+13,country Czech Republic,0.0
+14,country England,0.0
+15,country France,0.0027514865418279194
+16,country Georgia,0.0
+17,country Germany,0.0003314417498451126
+18,country Greece,0.0008000492941790362
+19,country Hungary,0.0001275582962268634
+20,country India,0.0
+21,country Israel,0.00010863914983887858
+22,country Italy,0.006646910893113347
+23,country Lebanon,0.0
+24,country Luxembourg,7.407804505511885e-05
+25,country Macedonia,0.0
+26,country Mexico,0.0
+27,country Moldova,0.0
+28,country Morocco,0.0
+29,country New Zealand,0.0008539622256728985
+30,country Peru,0.0
+31,country Portugal,0.007345693227955389
+32,country Romania,8.485316023908216e-05
+33,country Serbia,0.0
+34,country Slovakia,0.0
+35,country Slovenia,0.0001934044801184702
+36,country South Africa,0.0006346550635459118
+37,country Spain,0.0008789058712798789
+38,country Switzerland,0.0
+39,country Turkey,0.00012418415836488674
+40,country US,0.0028157781618872333
+41,country Ukraine,0.0
+42,country Uruguay,0.0
+43,province Achaia,9.105730913784856e-05
+44,province Aconcagua Costa,7.654001738485919e-05
+45,province Aconcagua Valley,0.00018258108069804617
+46,province Aegean,0.0
+47,province Agioritikos,0.0
+48,province Ahr,0.0
+49,province Alenquer,7.552718421798788e-05
+50,province Alentejano,0.000597472276691471
+51,province Alentejo,0.0002785846360201591
+52,province Alenteo,0.0
+53,province Algarve,8.30854906284593e-05
+54,province Alsace,0.0024880622441232677
+55,province America,0.00031490255656863443
+56,province Amindeo,0.0
+57,province Amyndeon,0.0
+58,province Andalucia,0.0009992318939749483
+59,province Ankara,0.0
+60,province Apalta,0.0
+61,province Arcadia,0.0
+62,province Arizona,5.562069439194261e-05
+63,province Armenia,0.0
+64,province Atalanti Valley,0.0
+65,province Atlantida,0.0
+66,province Attica,0.0
+67,province Australia Other,8.360440130715322e-05
+68,province Austria,0.000270638536013002
+69,province Awatere Valley,0.00016097601940612697
+70,province Baden,0.00027673808570831247
+71,province Bairrada,0.0008770319557814304
+72,province Beaujolais,0.0011765524995188078
+73,province Beira Atlantico,0.00013805816546022453
+74,province Beira Interior,0.0002999877814131821
+75,province Beiras,0.000450631270285081
+76,province Bekaa Valley,8.158686544074137e-05
+77,province Beotia,0.0
+78,province Black Sea Coastal,0.0
+79,province Bordeaux,0.00024231621705989693
+80,province Bot River,0.0
+81,province Brazil,0.0
+82,province Brda,0.0
+83,province Breede River Valley,0.0
+84,province Breedekloof,0.0
+85,province British Columbia,0.00046635211376984035
+86,province Bucelas,0.00011830489230737717
+87,province Buin,0.0
+88,province Bulgaria,0.0
+89,province Burgenland,0.0006873613326029689
+90,province Burgundy,0.0026344403732237297
+91,province Bío Bío Valley,1.3419888215204508e-05
+92,province Cachapoal Valley,0.0
+93,province Cahul,0.0
+94,province California,0.003504650101181852
+95,province Campanha,0.0
+96,province Canada Other,0.0
+97,province Canelones,0.0
+98,province Canterbury,0.0
+99,province Cape Agulhas,0.0
+100,province Cape Peninsula,0.0
+101,province Cape South Coast,0.0
+102,province Cappadocia,0.0
+103,province Carnuntum,0.0006892065231976208
+104,province Casablanca & Leyda Valleys,0.0
+105,province Casablanca Valley,0.00032533159510008026
+106,province Casablanca-Curicó Valley,0.0
+107,province Catalonia,0.00019424389908949782
+108,province Cauquenes Valley,0.0
+109,province Cederberg,0.0
+110,province Central Greece,0.0
+111,province Central Italy,0.0006215639390361438
+112,province Central Otago,0.00014952966301244833
+113,province Central Spain,0.00021020471002284545
+114,province Central Valley,7.436307939355773e-05
+115,province Cephalonia,0.0
+116,province Chalkidiki,0.0
+117,province Champagne,0.0028164888492487983
+118,province Chile,0.0
+119,province China,0.0
+120,province Choapa Valley,0.0
+121,province Coastal Region,3.5089600289266925e-05
+122,province Codru Region,0.0
+123,province Coelemu,0.0
+124,province Colares,4.437136552707288e-05
+125,province Colchagua Costa,0.0
+126,province Colchagua Valley,0.00035951871108695133
+127,province Colorado,0.00038445925142794
+128,province Commandaria,0.0
+129,province Connecticut,0.0
+130,province Constantia,0.0
+131,province Corinth,0.0
+132,province Corinthia,0.0
+133,province Crete,0.0
+134,province Croatia,0.0
+135,province Curicó Valley,3.935486044093303e-05
+136,province Curicó and Leyda Valleys,0.0
+137,province Curicó and Maipo Valleys,0.0
+138,province Cyclades,0.0
+139,province Cyprus,0.0
+140,province Dalmatian Coast,0.0
+141,province Dan,0.0
+142,province Danube River Plains,0.00020544802318395625
+143,province Darling,0.0
+144,province Dealu Mare,7.641127050953049e-05
+145,province Dealurile Hușilor,0.0
+146,province Dealurile Munteniei,0.0
+147,province Devon Valley,0.0
+148,province Dingač,0.0
+149,province Dolenjska,0.0
+150,province Douro,0.000476950012837548
+151,province Drama,0.0
+152,province Durbanville,0.0
+153,province Duriense,0.00025108008204701435
+154,province Dão,0.0009611684738336222
+155,province East Coast,0.0
+156,province Eger,0.0
+157,province Eilandia,0.0
+158,province Eisenberg,0.00016640248336758425
+159,province Elazığ,0.0
+160,province Elazığ-Diyarbakir,0.0
+161,province Elgin,0.00018155208937408365
+162,province Elim,0.0
+163,province Ella Valley,0.0
+164,province Elqui Valley,0.0
+165,province England,5.2255816984724854e-05
+166,province Epanomi,0.00012602193203511893
+167,province Estremadura,2.87779192534847e-05
+168,province Florina,0.0
+169,province France Other,0.00010876847597620304
+170,province Franken,0.0
+171,province Franschhoek,0.0
+172,province Fruška Gora,0.0
+173,province Galicia,0.000694859384840357
+174,province Galil,3.6332504649681124e-05
+175,province Galilee,0.0005651800427418449
+176,province Georgia,0.0
+177,province Germany,7.247198097634528e-05
+178,province Gisborne,7.786043636423251e-05
+179,province Gladstone,0.0
+180,province Golan Heights,1.7282746663420367e-05
+181,province Goriska Brda,0.0
+182,province Goumenissa,0.0
+183,province Greece,0.0
+184,province Groenekloof,0.0
+185,province Guerrouane,0.0
+186,province Halkidiki,0.0
+187,province Haut-Judeé,0.0
+188,province Hawaii,0.0
+189,province Hawke's Bay,0.00014798931853455348
+190,province Helderberg,0.0
+191,province Hemel en Aarde,0.0
+192,province Hrvatsko Primorje,0.0
+193,province Hungary,0.0
+194,province Hvar,0.0
+195,province Ica,0.0
+196,province Idaho,0.00022469057330594711
+197,province Illinois,0.0
+198,province Imathia,0.0
+199,province Iowa,0.0
+200,province Ismarikos,0.0
+201,province Israel,0.0
+202,province Istria,0.0
+203,province Italy Other,0.00012528073597969854
+204,province Itata Valley,0.0
+205,province Jerusalem Hills,0.0
+206,province Jidvei,0.0
+207,province Jonkershoek Valley,0.0
+208,province Juanico,0.00012515908062384957
+209,province Judean Hills,0.0002615467155220106
+210,province Kakheti,0.00022576110450907584
+211,province Kamptal,0.0006470639782247862
+212,province Kathikas,0.0
+213,province Kentucky,0.0
+214,province Korinthia,0.0
+215,province Korčula,0.0
+216,province Krania Olympus,0.0
+217,province Kras,0.0
+218,province Kremstal,0.0006910888784433065
+219,province Krk,0.0
+220,province Kumeu,0.00011210371161644433
+221,province Kutjevo,0.0
+222,province Lakonia,0.0
+223,province Landwein Rhein,4.7419347479775206e-05
+224,province Languedoc-Roussillon,0.0001385075901068163
+225,province Lebanon,0.0
+226,province Leithaberg,0.00010295178213757181
+227,province Lemesos,0.0
+228,province Lesbos,0.0
+229,province Letrinon,0.0
+230,province Levante,0.0
+231,province Leyda Valley,0.00020540886447875268
+232,province Leyda Valley-Maipo Valley,0.0
+233,province Limarí Valley,0.0
+234,province Limnos,0.0
+235,province Lisboa,0.0006007526295307142
+236,province Loire Valley,0.001521381591751924
+237,province Lolol Valley,0.0
+238,province Lombardy,0.00036744592155293925
+239,province Loncomilla Valley,0.0
+240,province Lontué Valley,0.0
+241,province Lutzville Valley,0.0
+242,province Macedonia,0.0
+243,province Madeira,0.0
+244,province Maipo Valley,8.771665703985536e-05
+245,province Maipo Valley-Colchagua Valley,0.0
+246,province Malgas,0.0
+247,province Malleco,5.597496633074938e-05
+248,province Mantinia,0.0
+249,province Marchigue,8.263855140588187e-05
+250,province Markopoulo,0.0
+251,province Marlborough,0.000700843614989843
+252,province Martinborough,6.584188959238482e-05
+253,province Massachusetts,0.0
+254,province Maule Valley,0.00017904200658171187
+255,province Mavrodaphne de Cephalonie,0.0
+256,province Mavrodaphne of Patras,0.0
+257,province Mendoza Province,0.00026238433782632713
+258,province Messinia,0.0
+259,province Michigan,0.0015949749536215564
+260,province Middle and South Dalmatia,0.0
+261,province Minho,8.50186503994496e-05
+262,province Missouri,0.0
+263,province Mittelburgenland,7.797688953170431e-06
+264,province Mittelrhein,0.0
+265,province Moldova,0.0
+266,province Molina,0.0
+267,province Monemvasia,0.0
+268,province Montevideo,0.0
+269,province Moravia,0.0
+270,province Morocco,0.0
+271,province Moscatel de Setúbal,4.4781091611818104e-05
+272,province Moscatel do Douro,0.0
+273,province Mosel,0.00040294638456671945
+274,province Mosel-Saar-Ruwer,0.000658896579522677
+275,province Moselle Luxembourgeoise,0.0
+276,province Mostar,0.0
+277,province Mount Athos,0.0
+278,province Murfatlar,0.0
+279,province Muscat of Kefallonian,0.0
+280,province Muscat of Patras,0.0
+281,province Muzla,0.0
+282,province Mátra,0.0
+283,province Nahe,0.00038217215792709703
+284,province Naoussa,0.0
+285,province Nashik,0.00032805475056455884
+286,province Negev,0.0
+287,province Negev Hills,0.0
+288,province Nelson,6.815962358382868e-05
+289,province Nemea,0.0
+290,province Neuchâtel,0.0
+291,province Neusiedlersee,7.485781395043608e-05
+292,province Nevada,0.0
+293,province New Jersey,0.0
+294,province New Mexico,0.0
+295,province New South Wales,0.0002298091297104617
+296,province New York,0.003743751405444132
+297,province New Zealand,0.0
+298,province Niederösterreich,0.0007346193229701101
+299,province North Carolina,0.0
+300,province North Dalmatia,0.0
+301,province Northeastern Italy,0.0005050458278655837
+302,province Northern Cape,0.0
+303,province Northern Spain,0.0
+304,province Northwestern Italy,0.0
+305,province Obidos,4.92419503768473e-05
+306,province Ohio,0.0
+307,province Olifants River,0.0
+308,province Ontario,0.0002172072120652563
+309,province Oregon,0.003912061357442858
+310,province Other,0.00015484531306732141
+311,province Overberg,0.0
+312,province Paardeberg,0.0
+313,province Paarl,0.00026285930593809235
+314,province Pafos,0.0
+315,province Pageon,0.0
+316,province Palmela,9.357226743804514e-05
+317,province Panciu,0.0
+318,province Pangeon,0.0
+319,province Patras,9.099334193789185e-05
+320,province Peljesac,0.0
+321,province Peloponnese,4.998398397753929e-05
+322,province Pennsylvania,1.887716388486485e-06
+323,province Península de Setúbal,0.0005449755283629824
+324,province Peumo,0.0
+325,province Pfalz,0.0005147953719470376
+326,province Philadelphia,0.0
+327,province Piedmont,0.0006417920876603079
+328,province Pinto Bandeira,0.0
+329,province Pirque,0.0
+330,province Pitsilia Mountains,0.0
+331,province Pocerina,0.0
+332,province Podunavlje,0.0
+333,province Polkadraai Hills,0.0
+334,province Port,0.0005587096990523171
+335,province Portugal,0.0
+336,province Portuguese Table Wine,0.0004442155257179222
+337,province Primorska,0.0
+338,province Progreso,0.0
+339,province Provence,0.00205443039395701
+340,province Puente Alto,0.0
+341,province Rapel Valley,0.0
+342,province Rapsani,0.0
+343,province Recas,0.0
+344,province Requinoa,0.0
+345,province Retsina,0.0
+346,province Rheingau,0.0007815838938389412
+347,province Rheinhessen,0.0008764645570191092
+348,province Rhode Island,0.0
+349,province Rhône Valley,0.0006053837041885608
+350,province Ribatejano,0.00011829767768170407
+351,province Ribatejo,0.00018600394680720763
+352,province Rio Claro,0.0
+353,province Robertson,0.0
+354,province Romania,0.0
+355,province Sagrada Familia,0.0
+356,province Samos,0.0
+357,province Samson,0.0
+358,province San Antonio,2.1833529068877226e-05
+359,province San Antonio de las Minas Valley,0.0
+360,province San Clemente,0.0
+361,province San Jose,0.0
+362,province San Vicente,0.0
+363,province Santa Catarina,0.0
+364,province Santa Cruz,0.0
+365,province Santorini,0.0
+366,province Sebes,0.0
+367,province Serra Gaúcha,0.0
+368,province Serra do Sudeste,0.0
+369,province Setubal,0.00010363664497587906
+370,province Shomron,0.0
+371,province Sicily & Sardinia,0.000704720201563416
+372,province Simonsberg-Paarl,0.0
+373,province Simonsberg-Stellenbosch,0.0
+374,province Sithonia,0.0
+375,province Slovenia,9.597580425669018e-05
+376,province Slovenska Istra,0.0
+377,province Sopron,0.0
+378,province South Africa,0.0
+379,province South Australia,0.0004717098050300575
+380,province South Island,0.0
+381,province Southern Italy,9.349857705637994e-05
+382,province Southwest France,0.00537862639360394
+383,province Spain Other,6.007194066552042e-05
+384,province Spanish Islands,0.0001351082227398688
+385,province Steiermark,4.9957193893311545e-05
+386,province Stellenbosch,0.000259421347560723
+387,province Sterea Ellada,0.0
+388,province Swartland,0.0
+389,province Switzerland,0.00021715560387094
+390,province Szekszárd,0.0
+391,province Südburgenland,0.0
+392,province Südoststeiermark,0.0001757457399793759
+393,province Südsteiermark,0.00016126579616264396
+394,province Table wine,0.0
+395,province Tarnave,0.0
+396,province Tasmania,5.021354018306085e-05
+397,province Tejo,0.00048226565387000095
+398,province Terras do Dão,0.0
+399,province Terras do Sado,0.00018213037638545367
+400,province Texas,0.0002428647493669631
+401,province Thermenregion,0.0003041014187074849
+402,province Thessalikos,0.0
+403,province Thrace,7.403520061032149e-05
+404,province Thracian Valley,0.00014084192690247196
+405,province Thraki,0.0
+406,province Ticino,0.0
+407,province Tikves,0.0
+408,province Tokaj,0.0
+409,province Tokaji,0.00026060175512533114
+410,province Traisental,0.00018208042053188212
+411,province Trás-os-Montes,0.00017142588208553868
+412,province Tulbagh,0.0
+413,province Turkey,0.0
+414,province Tuscany,0.0006242385831076306
+415,province Távora-Varosa,0.0
+416,province Ukraine,0.0
+417,province Upper Galilee,0.0
+418,province Urla-Thrace,0.0
+419,province Uruguay,0.0
+420,province Valais,0.0
+421,province Vale Trentino,5.529011790260161e-05
+422,province Vale dos Vinhedos,0.0
+423,province Valle de Guadalupe,7.615474938464734e-05
+424,province Veneto,0.0009786750654739698
+425,province Vermont,0.0
+426,province Victoria,0.00076752201899022
+427,province Vienna,0.0001749208556009158
+428,province Viile Timis,0.0
+429,province Viile Timisului,0.0
+430,province Villány,0.0002780499252568112
+431,province Vin de Pays de Velvendo,0.0
+432,province Vinho Espumante,0.0
+433,province Vinho Espumante de Qualidade,0.0
+434,province Vinho Licoroso,0.0
+435,province Vinho Verde,0.000343433168218111
+436,province Vinho da Mesa,0.0
+437,province Vipavska Dolina,0.0
+438,province Virginia,0.007105219455525263
+439,province Vlootenburg,0.0
+440,province Vânju Mare,0.0
+441,province Wachau,0.00022671981046352432
+442,province Wagram,0.00033390610113850585
+443,province Wagram-Donauland,0.0003265111974898985
+444,province Waiheke Island,0.0
+445,province Waipara,7.091792900567637e-05
+446,province Waipara Valley,8.680847025669017e-05
+447,province Wairarapa,0.0
+448,province Wairau Valley,9.092944211911586e-05
+449,province Waitaki Valley,0.0
+450,province Walker Bay,0.0
+451,province Washington,0.0032288220492278493
+452,province Washington-Oregon,0.0
+453,province Weinland Österreich,0.00014313977038262098
+454,province Weinviertel,0.0003276164643914822
+455,province Wellington,0.0
+456,province Western Australia,0.00040277328029340376
+457,province Western Cape,0.0
+458,province Wiener Gemischter Satz,0.00018960453287088154
+459,province Württemberg,0.00034913628773223306
+460,province Zenata,0.0
+461,province Österreichischer Perlwein,0.0
+462,province Österreichischer Sekt,0.0007175704859717772
+463,province Štajerska,0.0
+464,province Župa,7.215393998875225e-05
+465,variety Abouriou,4.870441136899215e-05
+466,variety Agiorgitiko,0.0
+467,variety Aglianico,0.0004443789338819196
+468,variety Aidani,0.0
+469,variety Airen,0.0
+470,variety Albana,0.00012586547227461223
+471,variety Albanello,0.0
+472,variety Albariño,6.265366977022733e-05
+473,variety Albarossa,0.0
+474,variety Aleatico,3.359570787376971e-05
+475,variety Alfrocheiro,6.853733738742881e-05
+476,variety Alicante,0.0
+477,variety Alicante Bouschet,0.0006365666721427267
+478,variety Aligoté,1.2275821453985976e-06
+479,variety Alsace white blend,0.00017575279962557376
+480,variety Altesse,0.0
+481,variety Alvarelhão,0.0
+482,variety Alvarinho,0.000308876889781392
+483,variety Alvarinho-Chardonnay,0.0
+484,variety Ansonica,0.0
+485,variety Antão Vaz,0.0
+486,variety Apple,0.0
+487,variety Aragonez,0.0
+488,variety Aragonês,4.1895446290484926e-05
+489,variety Argaman,0.0
+490,variety Arinto,0.0
+491,variety Arneis,0.0
+492,variety Asprinio,0.0
+493,variety Assyrtico,0.0
+494,variety Assyrtiko,9.051327937958638e-05
+495,variety Athiri,0.0
+496,variety Austrian Red Blend,0.0001448080632930832
+497,variety Austrian white blend,6.423550760024314e-05
+498,variety Auxerrois,0.00011018359028533748
+499,variety Avesso,0.0
+500,variety Azal,0.0
+501,variety Babić,0.0
+502,variety Babosa Negro,0.0
+503,variety Baco Noir,2.4648304593436626e-05
+504,variety Baga,0.0002227802805421932
+505,variety Baga-Touriga Nacional,0.0
+506,variety Barbera,0.00030258784917461034
+507,variety Barbera-Nebbiolo,0.0
+508,variety Bastardo,0.0
+509,variety Biancale,0.0
+510,variety Biancolella,0.0
+511,variety Bical,0.0
+512,variety Black Monukka,0.0
+513,variety Black Muscat,0.0
+514,variety Blanc du Bois,0.0
+515,variety Blatina,0.0
+516,variety Blauburger,0.0
+517,variety Blauburgunder,0.0
+518,variety Blauer Portugieser,0.0
+519,variety Blaufränkisch,0.00046913988596051424
+520,variety Bobal,0.0
+521,variety Bobal-Cabernet Sauvignon,0.0
+522,variety Bombino Bianco,0.0
+523,variety Bombino Nero,0.0
+524,variety Bonarda,0.0
+525,variety Bordeaux-style Red Blend,0.00246106676959897
+526,variety Bordeaux-style White Blend,0.0002655055541611308
+527,variety Bovale,0.0
+528,variety Boğazkere,0.0
+529,variety Brachetto,0.0
+530,variety Braucol,0.0
+531,variety Bual,0.0
+532,variety Cabernet,0.0
+533,variety Cabernet Blend,0.0001616924853199854
+534,variety Cabernet Franc,0.0010571245570515188
+535,variety Cabernet Franc-Cabernet Sauvignon,0.0
+536,variety Cabernet Franc-Carmenère,0.0
+537,variety Cabernet Franc-Lemberger,0.0
+538,variety Cabernet Franc-Malbec,0.0
+539,variety Cabernet Franc-Merlot,0.00012550555810081563
+540,variety Cabernet Merlot,5.661515340789299e-05
+541,variety Cabernet Moravia,0.0
+542,variety Cabernet Pfeffer,0.0
+543,variety Cabernet Sauvignon,0.0031539198649331865
+544,variety Cabernet Sauvignon Grenache,0.0
+545,variety Cabernet Sauvignon-Barbera,0.0
+546,variety Cabernet Sauvignon-Cabernet Franc,0.0
+547,variety Cabernet Sauvignon-Carmenère,4.879107402267132e-05
+548,variety Cabernet Sauvignon-Malbec,0.0
+549,variety Cabernet Sauvignon-Merlot,9.953823036304351e-05
+550,variety Cabernet Sauvignon-Merlot-Shiraz,9.1704897862523e-05
+551,variety Cabernet Sauvignon-Sangiovese,0.0
+552,variety Cabernet Sauvignon-Shiraz,9.442066703224214e-05
+553,variety Cabernet Sauvignon-Syrah,5.048202246558926e-05
+554,variety Cabernet Sauvignon-Tempranillo,0.0
+555,variety Cabernet-Malbec,0.0
+556,variety Cabernet-Shiraz,0.0
+557,variety Cabernet-Syrah,0.00015522192258419828
+558,variety Canaiolo,3.414645718317544e-05
+559,variety Cannonau,0.0
+560,variety Caprettone,7.529485857152354e-05
+561,variety Carcajolu,0.0
+562,variety Carignan,5.602237344605385e-05
+563,variety Carignan-Grenache,0.0
+564,variety Carignan-Syrah,0.0
+565,variety Carignane,0.0
+566,variety Carignano,8.531304788926845e-05
+567,variety Carineña,0.0
+568,variety Cariñena-Garnacha,0.0
+569,variety Carmenère,0.000356523019748647
+570,variety Carmenère-Cabernet Sauvignon,0.0
+571,variety Carmenère-Syrah,0.0
+572,variety Carricante,0.00018495108894152858
+573,variety Casavecchia,0.0
+574,variety Castelão,0.0002918807270584038
+575,variety Catalanesca,0.0
+576,variety Catarratto,4.748070684679477e-05
+577,variety Cayuga,0.0
+578,variety Centesimino,0.0
+579,variety Cerceal,0.0
+580,variety Cercial,0.0
+581,variety Cesanese,0.00014623038304530667
+582,variety Cesanese d'Affile,0.0
+583,variety Chambourcin,0.0
+584,variety Champagne Blend,0.0025977367314747022
+585,variety Chancellor,0.0
+586,variety Charbono,0.0
+587,variety Chardonel,0.0
+588,variety Chardonnay,0.004485828798662812
+589,variety Chardonnay Weissburgunder,0.0
+590,variety Chardonnay-Albariño,0.0
+591,variety Chardonnay-Pinot Blanc,0.0
+592,variety Chardonnay-Pinot Gris,0.0
+593,variety Chardonnay-Riesling,0.0
+594,variety Chardonnay-Sauvignon,0.0
+595,variety Chardonnay-Sauvignon Blanc,0.0
+596,variety Chardonnay-Semillon,4.407987696468675e-05
+597,variety Chardonnay-Viognier,0.00013204859507549242
+598,variety Chasselas,0.0
+599,variety Chelois,0.0
+600,variety Chenin Blanc,0.0009069853061758648
+601,variety Chenin Blanc-Chardonnay,0.0
+602,variety Chenin Blanc-Sauvignon Blanc,0.0
+603,variety Chenin Blanc-Viognier,0.0
+604,variety Chinuri,0.0
+605,variety Ciliegiolo,0.0
+606,variety Cinsault,0.0
+607,variety Clairette,0.0
+608,variety Claret,0.0
+609,variety Cococciola,0.0
+610,variety Coda di Volpe,0.0
+611,variety Colombard,0.0
+612,variety Colombard-Sauvignon Blanc,0.0
+613,variety Colombard-Ugni Blanc,0.0
+614,variety Colorino,0.0
+615,variety Cortese,9.158776073377485e-05
+616,variety Corvina,1.8381587714114065e-05
+617,"variety Corvina, Rondinella, Molinara",0.00018577286078223023
+618,variety Counoise,0.0
+619,variety Códega do Larinho,0.0
+620,variety Dafni,0.0
+621,variety Debit,0.00014544717689791905
+622,variety Diamond,0.0
+623,variety Dolcetto,3.5741889777715146e-06
+624,variety Dornfelder,8.421504069424064e-05
+625,variety Doña Blanca,0.0
+626,variety Duras,4.3222484016442344e-05
+627,variety Durella,0.0001488393040450745
+628,variety Durif,0.0
+629,variety Edelzwicker,0.0
+630,variety Elbling,0.0
+631,variety Emir,0.0
+632,variety Encruzado,0.0001607036384012689
+633,variety Erbaluce,0.0
+634,variety Falanghina,0.0
+635,variety Favorita,0.0
+636,variety Fer Servadou,0.0
+637,variety Fernão Pires,4.678613371902257e-05
+638,variety Feteasca,0.0
+639,variety Feteasca Neagra,0.0
+640,variety Feteascǎ Regalǎ,0.0
+641,variety Fiano,7.38104721833485e-05
+642,variety Folle Blanche,0.0
+643,variety Forcallà,0.0
+644,variety Francisa,0.0
+645,variety Franconia,0.0
+646,variety Frankovka,0.0
+647,variety Frappato,8.528246985646754e-05
+648,variety Freisa,0.0
+649,variety Friulano,0.0
+650,variety Früburgunder,0.0
+651,variety Fumé Blanc,6.053654652166213e-05
+652,variety Furmint,0.00011370914825401608
+653,variety G-S-M,0.0001477781252402533
+654,variety Gaglioppo,0.0
+655,variety Gamay,0.0005606179156896792
+656,variety Gamay Noir,0.0
+657,variety Gamza,0.0
+658,variety Garganega,6.488577108155498e-05
+659,variety Garnacha,0.00042905840311493906
+660,variety Garnacha Blanca,0.0
+661,variety Garnacha Blend,0.0
+662,variety Garnacha Tintorera,0.0
+663,variety Garnacha-Cabernet,0.0
+664,variety Garnacha-Cariñena,0.0
+665,variety Garnacha-Monastrell,0.0
+666,variety Garnacha-Syrah,0.0
+667,variety Garnacha-Tempranillo,0.0
+668,variety Gelber Muskateller,0.000221704369795014
+669,variety Gelber Traminer,0.0
+670,variety Gewürztraminer,0.0007749337544635696
+671,variety Gewürztraminer-Riesling,0.0
+672,variety Glera,0.00026381516957160354
+673,variety Godello,0.0
+674,variety Gouveio,4.6094713023667544e-05
+675,variety Graciano,0.0001839203588067564
+676,variety Gragnano,0.0
+677,variety Grauburgunder,0.0
+678,variety Graševina,0.0
+679,variety Grecanico,0.0
+680,variety Grechetto,0.0
+681,variety Greco,0.0001347075090785058
+682,variety Greco Bianco,0.0
+683,variety Grenache,0.00026979166197280423
+684,variety Grenache Blanc,0.0
+685,variety Grenache Blend,0.0
+686,variety Grenache Gris,0.0
+687,variety Grenache Noir,0.0
+688,variety Grenache-Carignan,0.0
+689,variety Grenache-Mourvèdre,0.0
+690,variety Grenache-Shiraz,0.0
+691,variety Grenache-Syrah,4.073894636758432e-05
+692,variety Grignolino,0.0
+693,variety Grillo,4.304034492572263e-05
+694,variety Grolleau,0.0
+695,variety Groppello,0.0
+696,variety Gros Manseng,0.00018634851299663535
+697,variety Gros Plant,0.0
+698,variety Gros and Petit Manseng,0.0002023676019624031
+699,variety Grüner Veltliner,0.001192914979978065
+700,variety Hondarrabi Zuri,0.0
+701,variety Hárslevelü,0.0
+702,variety Incrocio Manzoni,0.0
+703,variety Insolia,0.0
+704,variety Inzolia,0.0
+705,variety Irsai Oliver,0.0
+706,variety Jacquez,0.0
+707,variety Jacquère,0.0
+708,variety Jaen,0.00013323895835895268
+709,variety Jampal,5.331753130372937e-05
+710,variety Johannisberg Riesling,0.0
+711,variety Kadarka,0.0
+712,variety Kalecik Karasi,0.0
+713,variety Kangoun,0.0
+714,variety Karalahna,0.0
+715,variety Karasakiz,0.0
+716,variety Kekfrankos,0.0
+717,variety Kerner,0.00016384729465345507
+718,variety Kinali Yapincak,0.0
+719,variety Kisi,0.0
+720,variety Kotsifali,9.112134381374016e-05
+721,variety Kuntra,0.0
+722,variety Lagrein,0.0
+723,variety Lambrusco,0.0
+724,variety Lambrusco Grasparossa,6.700212209943544e-05
+725,variety Lambrusco Salamino,0.00012683459738595387
+726,variety Lambrusco di Sorbara,0.0006967923645942823
+727,variety Lemberger,7.424278496258006e-05
+728,variety Listán Negro,0.0
+729,variety Loin de l'Oeil,0.0
+730,variety Loureiro,4.8001035972457757e-05
+731,variety Loureiro-Arinto,0.0
+732,variety Macabeo,0.0
+733,variety Macabeo-Chardonnay,0.0
+734,variety Macabeo-Moscatel,0.0
+735,variety Madeira Blend,0.0
+736,variety Madeleine Angevine,0.0
+737,variety Magliocco,0.0
+738,variety Malagousia,0.0
+739,variety Malagouzia,0.0
+740,variety Malagouzia-Chardonnay,0.0
+741,variety Malbec,0.0007184706029124088
+742,variety Malbec Blend,7.602697295950349e-05
+743,variety Malbec-Bonarda,0.0
+744,variety Malbec-Cabernet,0.0
+745,variety Malbec-Cabernet Franc,0.0
+746,variety Malbec-Cabernet Sauvignon,0.0
+747,variety Malbec-Carménère,0.0
+748,variety Malbec-Merlot,0.0001114853496712717
+749,variety Malbec-Petit Verdot,0.0
+750,variety Malbec-Syrah,0.0
+751,variety Malbec-Tannat,0.0
+752,variety Malbec-Tempranillo,0.0
+753,variety Malvar,0.0
+754,variety Malvasia,0.0
+755,variety Malvasia Bianca,0.0002252762882533073
+756,variety Malvasia Fina,0.0
+757,variety Malvasia Istriana,0.0
+758,variety Malvasia Nera,0.00011985089982335724
+759,variety Malvasia di Candia,0.0
+760,variety Malvasia-Viura,0.0
+761,variety Mandilaria,0.0
+762,variety Mansois,0.0
+763,variety Mantonico,0.0
+764,variety Manzoni,0.0
+765,variety Marawi,0.0
+766,variety Maria Gomes,0.0
+767,variety Maria Gomes-Bical,0.0
+768,variety Marquette,0.0
+769,variety Marsanne,0.00019472816589694364
+770,variety Marsanne-Roussanne,0.0
+771,variety Marsanne-Viognier,0.0
+772,variety Marselan,0.0
+773,variety Marzemino,7.354778197448276e-05
+774,variety Mataro,7.372898988596193e-05
+775,variety Maturana,0.000137272488506472
+776,variety Mauzac,7.840710685325863e-05
+777,variety Mavrodaphne,0.0
+778,variety Mavrokalavryta,0.0
+779,variety Mavrotragano,0.0
+780,variety Mavroudi,0.0
+781,variety Mavrud,1.134209302279334e-05
+782,variety Mazuelo,0.00010263311638292781
+783,variety Melon,0.0023052802389676827
+784,variety Mencía,8.831264416951378e-05
+785,variety Meritage,0.0010751457054725677
+786,variety Merlot,0.002933380642228002
+787,variety Merlot-Argaman,0.0
+788,variety Merlot-Cabernet,0.0
+789,variety Merlot-Cabernet Franc,0.0
+790,variety Merlot-Cabernet Sauvignon,0.000130255811441499
+791,variety Merlot-Grenache,0.0
+792,variety Merlot-Malbec,0.0
+793,variety Merlot-Petite Verdot,0.0
+794,variety Merlot-Shiraz,0.0
+795,variety Merlot-Syrah,0.0
+796,variety Merlot-Tannat,0.0
+797,variety Merseguera-Sauvignon Blanc,0.0
+798,variety Meseguera,0.0
+799,variety Misket,0.0
+800,variety Mission,0.0
+801,variety Molinara,0.0
+802,variety Monastrell,0.0
+803,variety Monastrell-Petit Verdot,0.0
+804,variety Monastrell-Syrah,0.0
+805,variety Mondeuse,0.0
+806,variety Monica,0.0
+807,variety Montepulciano,0.0002610269356345424
+808,variety Morava,0.0
+809,variety Morillon,0.0
+810,variety Morio Muskat,0.0
+811,variety Moscadello,0.0
+812,variety Moscatel,0.00020023648187667548
+813,variety Moscatel Graúdo,0.0
+814,variety Moscatel Roxo,0.0
+815,variety Moscatel de Alejandría,0.0
+816,variety Moscato,0.0003353599328712575
+817,variety Moscato Giallo,0.0
+818,variety Moscato Rosa,0.0
+819,variety Moscato di Noto,0.0
+820,variety Moschofilero,4.678613371902257e-05
+821,variety Moschofilero-Chardonnay,0.0
+822,variety Mourvèdre,7.075970128796828e-05
+823,variety Mourvèdre-Syrah,0.0
+824,variety Mtsvane,0.0
+825,variety Muscadel,7.913088155437232e-05
+826,variety Muscadelle,0.0
+827,variety Muscadine,0.0
+828,variety Muscat,0.0006856660008664444
+829,variety Muscat Blanc,0.0
+830,variety Muscat Blanc à Petits Grains,0.0
+831,variety Muscat Canelli,0.0
+832,variety Muscat Hamburg,0.0
+833,variety Muscat d'Alexandrie,0.0
+834,variety Muscat of Alexandria,0.0
+835,variety Muscatel,0.0
+836,variety Muskat,0.0
+837,variety Muskat Ottonel,5.089788845333683e-05
+838,variety Muskateller,0.0
+839,variety Müller-Thurgau,0.0001319208490368986
+840,variety Narince,0.0
+841,variety Nascetta,0.0
+842,variety Nasco,7.02405513964187e-05
+843,variety Nebbiolo,0.0006004595668642049
+844,variety Negrette,3.5843035525830374e-05
+845,variety Negroamaro,7.235371838837104e-05
+846,variety Nerello Cappuccio,0.0
+847,variety Nerello Mascalese,0.00018736169248237834
+848,variety Nero d'Avola,0.0001049230258969338
+849,variety Nero di Troia,0.0
+850,variety Neuburger,0.0
+851,variety Nielluciu,0.0
+852,variety Norton,0.0
+853,variety Nosiola,0.0
+854,variety Nuragus,0.0
+855,variety Okuzgozu,0.0
+856,variety Ondenc,0.0
+857,variety Orange Muscat,3.6860073580412694e-05
+858,variety Orangetraube,0.0
+859,variety Other,0.0
+860,variety Pallagrello,0.0
+861,variety Pallagrello Bianco,0.0
+862,variety Pallagrello Nero,6.624475021631779e-05
+863,variety Palomino,7.797688953170431e-06
+864,variety Pansa Blanca,0.0
+865,variety Papaskarasi,0.0
+866,variety Paralleda,0.0
+867,variety Parraleta,0.0
+868,variety Passerina,0.0
+869,variety País,0.0
+870,variety Pecorino,8.981692378942042e-05
+871,variety Pedro Ximénez,7.352106727274977e-05
+872,variety Perricone,0.0
+873,variety Petit Courbu,0.0
+874,variety Petit Manseng,0.0003075314645570685
+875,variety Petit Verdot,0.0003639614763655139
+876,variety Petite Sirah,0.0
+877,variety Petite Verdot,0.00010916764534438598
+878,variety Picapoll,0.0
+879,variety Picolit,0.00012355457830185787
+880,variety Picpoul,0.0
+881,variety Piedirosso,0.0
+882,variety Pigato,0.0
+883,variety Pignoletto,0.0
+884,variety Pignolo,0.0
+885,variety Pinot Auxerrois,0.0
+886,variety Pinot Bianco,0.00011019773377431297
+887,variety Pinot Blanc,0.000331828897959944
+888,variety Pinot Blanc-Chardonnay,3.2782985777498264e-05
+889,variety Pinot Blanc-Pinot Noir,0.0
+890,variety Pinot Blanc-Viognier,0.0
+891,variety Pinot Grigio,8.186048713044714e-05
+892,variety Pinot Grigio-Sauvignon Blanc,0.0
+893,variety Pinot Gris,0.0011535799307595843
+894,variety Pinot Gris-Gewürztraminer,0.0
+895,variety Pinot Meunier,2.133862886173706e-05
+896,variety Pinot Nero,0.0003719834494194969
+897,variety Pinot Noir,0.005725332580666134
+898,variety Pinot Noir-Gamay,0.00012953415157631018
+899,variety Pinot Noir-Syrah,0.0
+900,variety Pinot-Chardonnay,0.0
+901,variety Pinotage,0.0
+902,variety Pinotage-Merlot,0.0
+903,variety Piquepoul Blanc,0.0
+904,variety Plavac Mali,0.0
+905,variety Plyto,0.0
+906,variety Port,0.0006866598521344914
+907,variety Portuguese Red,0.0044203073879083895
+908,variety Portuguese Rosé,0.0
+909,variety Portuguese Sparkling,0.0001666245965454134
+910,variety Portuguese White,0.00045915156041660546
+911,variety Portuguiser,0.0
+912,variety Posip,0.0
+913,variety Poulsard,0.0
+914,variety Premsal,0.0
+915,variety Prieto Picudo,9.833470814919752e-05
+916,variety Primitivo,0.0003418289564730243
+917,variety Prié Blanc,0.0
+918,variety Prosecco,0.0
+919,variety Provence red blend,0.0002825203391138513
+920,variety Provence white blend,0.00021235496842043786
+921,variety Prugnolo Gentile,0.00021023838781220497
+922,variety Prunelard,0.0
+923,variety Pugnitello,9.780563351670949e-05
+924,variety Rabigato,0.0
+925,variety Raboso,2.2161852814273895e-05
+926,variety Ramisco,0.0
+927,variety Rara Neagra,0.0
+928,variety Rebo,0.0
+929,variety Rebula,0.0
+930,variety Red Blend,0.0028913333964760216
+931,variety Refosco,0.0
+932,variety Rhône-style Red Blend,0.0008039767094164694
+933,variety Rhône-style White Blend,0.00039013543094316267
+934,variety Ribolla Gialla,0.0
+935,variety Rieslaner,0.0
+936,variety Riesling,0.014063392579508924
+937,variety Riesling-Chardonnay,7.061841734405933e-05
+938,variety Rivaner,0.0
+939,variety Rkatsiteli,1.5595377906340853e-05
+940,variety Robola,0.0
+941,variety Roditis,0.0
+942,variety Roditis-Moschofilero,0.0
+943,variety Rolle,3.923060901905598e-05
+944,variety Romorantin,0.0
+945,variety Rosado,0.0
+946,variety Rosato,0.000186843984403365
+947,variety Rosenmuskateller,0.0
+948,variety Rosé,0.0008682699385327214
+949,variety Roter Traminer,0.0001192977942322312
+950,variety Roter Veltliner,6.238151162536342e-05
+951,variety Rotgipfler,0.0
+952,variety Roussanne,5.398400044502626e-06
+953,variety Roussanne-Grenache Blanc,0.0
+954,variety Roussanne-Marsanne,0.0
+955,variety Roussanne-Viognier,0.0
+956,variety Roviello,0.0
+957,variety Ruché,4.645751451407375e-05
+958,variety Rufete,0.0
+959,variety Ryzlink Rýnský,0.0
+960,variety Sacy,0.0
+961,variety Sagrantino,2.179718078651289e-05
+962,variety Sangiovese,0.000921722871012291
+963,variety Sangiovese Cabernet,0.0
+964,variety Sangiovese Grosso,0.0001590957571572973
+965,variety Sangiovese-Cabernet Sauvignon,0.0
+966,variety Sangiovese-Syrah,0.0
+967,variety Saperavi,1.1696533429755643e-05
+968,variety Saperavi-Merlot,0.0
+969,variety Sauvignon,0.00021952206496117862
+970,variety Sauvignon Blanc,0.0013407524521330731
+971,variety Sauvignon Blanc-Assyrtiko,0.0
+972,variety Sauvignon Blanc-Chardonnay,0.0
+973,variety Sauvignon Blanc-Chenin Blanc,0.0
+974,variety Sauvignon Blanc-Semillon,0.0001074881717257906
+975,variety Sauvignon Blanc-Verdejo,0.0
+976,variety Sauvignon Gris,0.0
+977,variety Sauvignon Musqué,0.0
+978,variety Sauvignon-Sémillon,0.0
+979,variety Sauvignonasse,0.0
+980,variety Savagnin,2.9353447436123835e-05
+981,variety Savatiano,0.0
+982,variety Scheurebe,0.0
+983,variety Schiava,0.0
+984,variety Schwartzriesling,0.0
+985,variety Sciaccerellu,0.0
+986,variety Semillon-Chardonnay,0.0
+987,variety Semillon-Sauvignon Blanc,0.0
+988,variety Sercial,0.0
+989,variety Seyval Blanc,0.0
+990,variety Sherry,9.089877408267243e-05
+991,variety Shiraz,0.0009224466859609209
+992,variety Shiraz-Cabernet,0.00014654758497283964
+993,variety Shiraz-Cabernet Sauvignon,0.0
+994,variety Shiraz-Grenache,0.0
+995,variety Shiraz-Malbec,0.0
+996,variety Shiraz-Mourvèdre,0.0
+997,variety Shiraz-Roussanne,0.0
+998,variety Shiraz-Tempranillo,0.0
+999,variety Shiraz-Viognier,0.0
+1000,variety Sideritis,0.0
+1001,variety Siegerrebe,0.0
+1002,variety Silvaner,0.0
+1003,variety Silvaner-Traminer,0.0
+1004,variety Siria,0.0
+1005,variety Sirica,0.00012634864107412613
+1006,variety Sousão,0.0
+1007,variety Souzao,0.0
+1008,variety Sparkling Blend,0.0014690635974617895
+1009,variety Spätburgunder,0.0004681201898172079
+1010,variety St. Laurent,0.0004326952786484322
+1011,variety St. Vincent,0.0
+1012,variety Susumaniello,0.0
+1013,variety Sylvaner,8.108318239378922e-05
+1014,variety Symphony,0.0
+1015,variety Syrah,0.0015504969462969624
+1016,variety Syrah-Bonarda,0.0
+1017,variety Syrah-Cabernet,0.0
+1018,variety Syrah-Cabernet Franc,0.0
+1019,variety Syrah-Cabernet Sauvignon,0.0
+1020,variety Syrah-Carignan,0.0
+1021,variety Syrah-Grenache,0.00010609689402055693
+1022,variety Syrah-Grenache-Viognier,0.0
+1023,variety Syrah-Malbec,0.0
+1024,variety Syrah-Merlot,0.0
+1025,variety Syrah-Mourvèdre,0.0
+1026,variety Syrah-Petit Verdot,0.0
+1027,variety Syrah-Petite Sirah,0.0
+1028,variety Syrah-Tempranillo,0.0
+1029,variety Syrah-Viognier,0.0
+1030,variety Sämling,0.0001224472023202256
+1031,variety Sémillon,0.000246272763416041
+1032,variety Tamianka,0.0
+1033,variety Tamjanika,0.0
+1034,variety Tannat,0.0003284981444785384
+1035,variety Tannat-Cabernet,0.0004511150243155405
+1036,variety Tannat-Cabernet Franc,0.0006547191388472034
+1037,variety Tannat-Merlot,4.873555595731506e-05
+1038,variety Tannat-Syrah,0.0
+1039,variety Tempranillo,0.0005434063794253275
+1040,variety Tempranillo Blanco,0.0
+1041,variety Tempranillo Blend,0.0005580668360166404
+1042,variety Tempranillo-Cabernet Sauvignon,0.00010565377877515648
+1043,variety Tempranillo-Garnacha,0.0
+1044,variety Tempranillo-Merlot,0.0
+1045,variety Tempranillo-Shiraz,0.0
+1046,variety Tempranillo-Syrah,0.0
+1047,variety Tempranillo-Tannat,0.0
+1048,variety Teran,0.0
+1049,variety Teroldego,0.0002039097228314264
+1050,variety Teroldego Rotaliano,0.0
+1051,variety Terrantez,0.0
+1052,variety Thrapsathiri,0.0
+1053,variety Timorasso,0.00011158719198288459
+1054,variety Tinta Amarela,0.0
+1055,variety Tinta Barroca,0.0
+1056,variety Tinta Cao,0.0001465623391735525
+1057,variety Tinta Fina,0.0
+1058,variety Tinta Francisca,7.017920057853385e-05
+1059,variety Tinta Madeira,0.0
+1060,variety Tinta Miúda,0.0
+1061,variety Tinta Negra Mole,0.0
+1062,variety Tinta Roriz,0.0
+1063,variety Tinta de Toro,0.00012058633008730528
+1064,variety Tinta del Pais,0.0
+1065,variety Tinta del Toro,0.0
+1066,variety Tintilia ,0.0
+1067,variety Tinto Fino,0.0
+1068,variety Tinto Velasco,0.0
+1069,variety Tinto del Pais,5.4909903288367335e-05
+1070,variety Tocai,0.0
+1071,variety Tocai Friulano,0.0
+1072,variety Tokaji,0.0
+1073,variety Tokay,0.0
+1074,variety Tokay Pinot Gris,3.31953503784733e-05
+1075,variety Torbato,0.00014588468474023369
+1076,variety Torontel,0.0
+1077,variety Torrontés,0.0
+1078,variety Touriga,0.0
+1079,variety Touriga Franca,0.0
+1080,variety Touriga Nacional,0.0002521400196062488
+1081,variety Touriga Nacional Blend,3.796329405033052e-05
+1082,variety Touriga Nacional-Cabernet Sauvignon,0.00016261498895581852
+1083,variety Trajadura,0.0
+1084,variety Traminer,0.0002494767352974421
+1085,variety Traminette,0.0
+1086,variety Trebbiano,6.588488725180651e-05
+1087,variety Trebbiano Spoletino,0.0
+1088,variety Trebbiano di Lugana,0.0
+1089,variety Treixadura,0.0
+1090,variety Trepat,0.0
+1091,variety Trincadeira,0.0
+1092,variety Trollinger,0.0
+1093,variety Trousseau,0.0
+1094,variety Trousseau Gris,0.0
+1095,variety Turbiana,0.0005807703742158543
+1096,variety Tămâioasă Românească,0.0
+1097,variety Ugni Blanc,0.0
+1098,variety Ugni Blanc-Colombard,0.0
+1099,variety Uva di Troia,0.0
+1100,variety Uvalino,0.0
+1101,variety Valdiguié,0.0
+1102,variety Valvin Muscat,0.0
+1103,variety Veltliner,0.0
+1104,variety Verdeca,6.685772097422038e-05
+1105,variety Verdejo,0.0
+1106,variety Verdejo-Sauvignon Blanc,0.0
+1107,variety Verdejo-Viura,0.0
+1108,variety Verdelho,0.0001203902016024783
+1109,variety Verdicchio,0.00018713080708516173
+1110,variety Verdil,0.0
+1111,variety Verdosilla,0.0
+1112,variety Verduzzo,7.906281546344121e-05
+1113,variety Verduzzo Friulano ,6.138070326843326e-05
+1114,variety Vermentino,0.00024469791011579424
+1115,variety Vermentino Nero,0.0
+1116,variety Vernaccia,1.975213963719264e-05
+1117,variety Vespaiolo,0.0
+1118,variety Vespolina,0.0
+1119,variety Vidadillo,0.0
+1120,variety Vidal,0.0
+1121,variety Vidal Blanc,0.0
+1122,variety Vignoles,0.0
+1123,variety Vilana,0.0
+1124,variety Vinhão,0.00011841235132407551
+1125,variety Viognier,0.00043570062644703234
+1126,variety Viognier-Chardonnay,0.0
+1127,variety Viognier-Gewürztraminer,0.0
+1128,variety Viognier-Grenache Blanc,0.0
+1129,variety Viognier-Marsanne,0.0
+1130,variety Viognier-Roussanne,0.0
+1131,variety Viognier-Valdiguié,0.0
+1132,variety Viosinho,4.4558222589545275e-05
+1133,variety Vitovska,0.0
+1134,variety Viura,0.0
+1135,variety Viura-Chardonnay,0.0
+1136,variety Viura-Verdejo,0.0
+1137,variety Vranec,0.0
+1138,variety Weissburgunder,3.739398673807832e-05
+1139,variety Welschriesling,2.4624280904748674e-05
+1140,variety White Blend,0.001104234929235185
+1141,variety White Port,0.0
+1142,variety White Riesling,0.0
+1143,variety Xarel-lo,0.0
+1144,variety Xinisteri,0.0
+1145,variety Xinomavro,0.0
+1146,variety Xynisteri,0.0
+1147,variety Yapincak,0.0
+1148,variety Zibibbo,0.0001951592429377646
+1149,variety Zierfandler,0.00018196320409855175
+1150,variety Zierfandler-Rotgipfler,0.0
+1151,variety Zinfandel,0.00042889641337658785
+1152,variety Zlahtina,0.0
+1153,variety Zweigelt,0.00047012009744990137
+1154,variety Çalkarası,0.0
+1155,variety Žilavka,0.0

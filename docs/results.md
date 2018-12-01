@@ -79,7 +79,7 @@ When we pictured high-quality wine, the first things that popped in our head was
 
 ![](../results/viz_countries.png)
 
-Figure 1. Wine Quality by Country
+Figure 1. Wine Quality by Country. Bar width represents the number of wines from that country in the dataset relative to the US.
 
 As we suspected, wine from France is more likely than average to be given a high-quality rating. Suprisingly, Italian wine is worse than average. Note that the countries are ordered from left to right along the x-axis by how frequently they occur in the dataset. The US and France make more wine than any other country, and they've clearly figured out how to do it well.
 
@@ -103,7 +103,7 @@ What about wine variety? Below we have the five varieties that appear most often
 
 ![](../results/viz_variety.png)
 
-Figure 4. Wine Quality by Variety
+Figure 4. Wine Quality by Variety. Bar width represents the number of wines of that variety in the dataset relative to Pinot Noir.
 
 Pinot Noir fairs particularly well here.
 
@@ -114,13 +114,13 @@ Model
 
 The model used was a decision tree and the software was the DecisionTreeClassifier module from scikit-learn <sup>6</sup>. The model was chosen because it can handle continuous and categorical data, the data had input and output pairs, the amount of data was less than 100k samples<sup>6</sup> and the researchers have experience using this model. The training of the model was run on 80% of our data and then tested on the remaining 20%. The max depth of the model is chosen by automatically getting the maximum testing accuracy between depth 2 and 50. The max depth of the model was the only hyperparameter adjusted. The maximum testing accuracy of the model is 76%. The final model was run with the complete data set and thus could not be tested so there is no final accuracy score provided for the model.
 
-![](../results/depth_decision.png)
+![](../results/model_depth_decision.png)
 
 Figure 5. Results of the test accuracy ranging from depth 2 to 50. Max value depth was chosen as the hyperparameter for the model.
 
 To visualize the decision tree an image of depth 3 was generated. The decision tree is too large to print the entire model to an image, so depth 3 was choose as an optimal size. Depth 4 was too large to fit within the report and depth 2 only has feature splits on price.
 
-![](../results/decision_tree_depth_3.png)
+![](../results/model_decision_tree_depth_3.png)
 
 Figure 6. Decision tree at depth 3
 
@@ -129,7 +129,7 @@ Conclusion
 
 There were 1156 features analyzed in the analysis and the top 20 ranked features are show in figure 7. The features were ranked based on Gini Importance, a feature will be ranked higher if the classes of the split are more homogeneous. Price is the highest ranked parameter with a feature importance value of 0.7569, the next highest ranked feature is the country Austria with a value of 0.0165. The third best predictor is the grape variety Riesling with a feature value of 0.0135. There is a huge difference in the values between the top ranked feature and the second-best feature and less of a difference between the second and third predictor. The top three predictors are much stronger then the rest of the predictors shown in figure 7. All of the top three predictors appear in figure 6, which means they at least appear within depth 3 of the decision tree.
 
-The feature ranking tells us the level of importance that the feature has within the model but does not tell us how the feature effects the model. For example, the feature of country\_Austria is on this list, but without further exploartion we don't know if being from Australia means a wine is more or less likely to receive an excellent rating. The same can be said about the variety\_Riesling. A further analysis on these individual features would help to answer how they effect the model. In many cases, we can pair feature importance with our exploratory analysis to see the direction of these splits; in particular, if the split at the root of the tree - price &lt;= 30.5 - is True then the wine is much more likely to be categorized lower quality. As you can see from figure 3, the majority of the distribution for wine with a rating less than 90 points is between 0 and 30 dollars. Around this point there appears to be a clear splitting point between the two outcome categories, and this is borne out by our model.
+The feature ranking tells us the level of importance that the feature has within the model but does not tell us how the feature effects the model. For example, the feature of country Austria is on this list, but without further exploartion we don't know if being from Australia means a wine is more or less likely to receive an excellent rating. The same can be said about the variety Riesling. A further analysis on these individual features would help to answer how they effect the model. In many cases, we can pair feature importance with our exploratory analysis to see the direction of these splits; in particular, if the split at the root of the tree - price &lt;= 30.5 - is True then the wine is much more likely to be categorized lower quality. As you can see from figure 3, the majority of the distribution for wine with a rating less than 90 points is between 0 and 30 dollars. Around this point there appears to be a clear splitting point between the two outcome categories, and this is borne out by our model.
 
 Based on our analysis the best feature in determining the quality of wine is price. This feature was ranked much higher than the rest of the features. Unfortunately, with this analysis we can not make direct statements like if you buy a wine from Austria it will be excellent, but with the exploratory analysis (figure 2 and figure 3) and decision tree (figure 6) it is reasonable to say if you buy a bottle of wine over $30.50 it has a better chance of being of excellent quality.
 
@@ -137,11 +137,11 @@ Based on our analysis the best feature in determining the quality of wine is pri
 
 Figure 7. Plot of the top 20 features and a zoomed in view of the top features with price removed.
 
-| Feature           | Feature Ranking Value |
-|-------------------|-----------------------|
-| price             | 0.7569                |
-| country\_Austria  | 0.0165                |
-| variety\_Riesling | 0.0135                |
+| Feature          | Feature Ranking Value |
+|------------------|-----------------------|
+| price            | 0.7569                |
+| Country Austria  | 0.0165                |
+| Variety Riesling | 0.0135                |
 
 Table 2. Top three ranked features
 

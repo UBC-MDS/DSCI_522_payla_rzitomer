@@ -16,7 +16,7 @@ You can also reproduce this analysis by running the folowing scripts in the orde
 ```{bash}
 python src/load_data.py input_file output_file       # The input file is the raw data from Kaggle, the output_file is our cleaned data.
 python src/explore_data.py input_file output_folder  # The input file is the cleaned data (the output_file you got from running load_data.py). The output_folder is where to put the resulting viz files.
-python src/decision_tree.py input_file output_file   # The input file is the cleaned data (the output_file you got from running load_data.py). The output_file is where to put the results of the model.  
+python src/decision_tree.py input_file output_folder   # The input file is the cleaned data (the output_file you got from running load_data.py). The output_folder is where to put the results of the model.  
 python src/result_plots.py input_file output_folder  # The input file is the results of the model (the output_file you got from running decision_tree.py). The output_folder is where to put the files that visualize the model.
 Rscript -e "rmarkdown::render('output_file')"        # This line renders our final report, which relies on the output_folder, output_file, and output_folder of explore_data.py, decision_tree.py, result_plots.py respectively.
 ```
@@ -25,10 +25,23 @@ Example of the scripts with the file names from the repo:
 ```{bash}
 python src/load_data.py data/winemag-data-130k-v2.csv.zip data/wine_data_cleaned.csv    
 python src/explore_data.py data/wine_data_cleaned.csv results/viz_    
-python src/decision_tree.py data/wine_data_cleaned.csv results/rank.csv     
-python src/result_plots.py results/rank.csv results/results_     
+python src/decision_tree.py data/wine_data_cleaned.csv results/model_    
+python src/result_plots.py results/model_rank.csv results/results_     
 Rscript -e "rmarkdown::render('docs/results.Rmd')"     
 ```
+
+Packages and versions used during the analysis:
+
+| Packages | Version |
+|------|--------------|
+| pandas | 0.23.4 |
+| matplotlib | 2.2.3 |
+| argparse  | 1.1 |
+| numpy | 1.15.1 |
+| graphviz | 0.8.4 |
+| scikit-learn | 0.19.2 |
+
+Python Version 3.7.0 was used for this analysis
 
 ## Proposal
 
