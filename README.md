@@ -5,9 +5,14 @@
 
 WineEnthusiast<sup>1</sup> is a magazine that reviews wines and provides a score based off of a taste test. This analysis evaluated WineEnthusiast<sup>1</sup> rating data with a machine learning algorithm to evaluate the importance of price, country, province and variety on ratings greater than or equal to 90 points. A decision tree model was used to evaluate the highest valued parameters. The threshold of 90 points was chosen as it is the line between very good and excellent wine.
 
-## Scripts
+## Running the analysis
 
-To reproduce this analysis run the scripts in the order shown:
+To reproduce this analysis, run the following:
+```{bash}
+make all
+```
+
+You can also reproduce this analysis by running the folowing scripts in the order shown:
 ```{bash}
 python src/load_data.py input_file output_file       # The input file is the raw data from Kaggle, the output_file is our cleaned data.
 python src/explore_data.py input_file output_folder  # The input file is the cleaned data (the output_file you got from running load_data.py). The output_folder is where to put the resulting viz files.

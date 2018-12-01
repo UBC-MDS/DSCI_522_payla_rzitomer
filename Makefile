@@ -24,6 +24,7 @@ results/results_ : results/rank.csv src/result_plots.py
 docs/results.md : docs/results.Rmd results/viz_ results/results_
 	Rscript -e "rmarkdown::render('docs/results.Rmd')"
 
+# Delete all files outputted from running the analysis
 clean :
 	rm -f data/wine_data_cleaned.csv
 	rm -f results/viz_*
