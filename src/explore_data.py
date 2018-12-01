@@ -7,10 +7,10 @@
 #
 # Usage: python src/explore_data.py input_file output_file_prefix
 # Example usage: python src/explore_data.py 'data/wine_data_cleaned.csv' 'results/viz_'
-import argparse
 
-import pandas as pd
-import matplotlib.pyplot as plt
+import pandas as pd              # Version 0.23.4
+import argparse                  # Version 1.1
+import matplotlib.pyplot as plt  # Version 2.2.3
 
 
 parser = argparse.ArgumentParser()

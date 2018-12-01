@@ -8,8 +8,8 @@
 # Usage: python src/load_data.py input_file output_file
 # Example usage: python src/load_data.py 'data/winemag-data-130k-v2.csv.zip' 'data/wine_data_cleaned.csv'
 
-import pandas as pd
-import argparse
+import pandas as pd   # Version 0.23.4
+import argparse       # Version 1.1
 
 parser = argparse.ArgumentParser()
 parser.add_argument('input_file')
