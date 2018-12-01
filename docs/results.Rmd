@@ -75,7 +75,7 @@ Finally, we changed the `points` column (where the rating is stored) into a bina
   
 ![](../results/viz_countries.png)
 
-Figure 1. Wine Quality by Country
+Figure 1. Wine Quality by Country. Bar width represents the number of wines from that country in the dataset relative to the US.
 
   As we suspected, wine from France is more likely than average to be given a high-quality rating. Suprisingly, Italian wine is  worse than average. Note that the countries are ordered from left to right along the x-axis by how frequently they occur in the dataset. The US and France make more wine than any other country, and they've clearly figured out how to do it well.
 
@@ -99,7 +99,7 @@ Figure 3. Histogram of Cheaper Wine Prices Segmented by Quality
   
 ![](../results/viz_variety.png)
 
-Figure 4. Wine Quality by Variety
+Figure 4. Wine Quality by Variety. Bar width represents the number of wines of that variety in the dataset relative to Pinot Noir.
 
 Pinot Noir fairs particularly well here.
 
