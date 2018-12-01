@@ -9,8 +9,8 @@
 # run all analysis
 all: docs/results.md
 
-data/wine_data_cleaned.csv : data/winemag-data-130k-v2.csv.zip src/load_data.py
-	python src/load_data.py data/winemag-data-130k-v2.csv.zip data/wine_data_cleaned.csv
+data/wine_data_cleaned.csv results/viz_class_frequencies.png: data/winemag-data-130k-v2.csv.zip src/load_data.py
+	python src/load_data.py data/winemag-data-130k-v2.csv.zip data/wine_data_cleaned.csv results/viz_class_frequencies.png
 
 results/viz_ : data/wine_data_cleaned.csv src/explore_data.py
 	python src/explore_data.py data/wine_data_cleaned.csv results/viz_

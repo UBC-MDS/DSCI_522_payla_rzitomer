@@ -14,7 +14,7 @@ make all
 
 You can also reproduce this analysis by running the folowing scripts in the order shown:
 ```{bash}
-python src/load_data.py input_file output_file       # The input file is the raw data from Kaggle, the output_file is our cleaned data.
+python src/load_data.py input_file output_file viz_file       # The input file is the raw data from Kaggle, the output_file is our cleaned data. The viz_file has a visualization of rating frequencies used in our report.
 python src/explore_data.py input_file output_folder  # The input file is the cleaned data (the output_file you got from running load_data.py). The output_folder is where to put the resulting viz files.
 python src/decision_tree.py input_file output_folder   # The input file is the cleaned data (the output_file you got from running load_data.py). The output_folder is where to put the results of the model.  
 python src/result_plots.py input_file output_folder  # The input file is the results of the model (the output_file you got from running decision_tree.py). The output_folder is where to put the files that visualize the model.
@@ -23,7 +23,7 @@ Rscript -e "rmarkdown::render('output_file')"        # This line renders our fin
 Example of the scripts with the file names from the repo:    
 
 ```{bash}
-python src/load_data.py data/winemag-data-130k-v2.csv.zip data/wine_data_cleaned.csv    
+python src/load_data.py data/winemag-data-130k-v2.csv.zip data/wine_data_cleaned.csv results/viz_class_frequencies 
 python src/explore_data.py data/wine_data_cleaned.csv results/viz_    
 python src/decision_tree.py data/wine_data_cleaned.csv results/model_    
 python src/result_plots.py results/model_rank.csv results/results_     
