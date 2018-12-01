@@ -7,9 +7,11 @@
 #
 # Usage: python src/explore_data.py input_file output_file_prefix
 # Example usage: python src/explore_data.py 'data/wine_data_cleaned.csv' 'results/viz_'
-import pandas as pd
 import argparse
+
+import pandas as pd
 import matplotlib.pyplot as plt
+
 
 parser = argparse.ArgumentParser()
 parser.add_argument('input_file')
@@ -33,10 +35,16 @@ y = [100*sum(us.greater_than_90)/len(us),
      100*sum(spain.greater_than_90)/len(spain),
      100*sum(portugal.greater_than_90)/len(portugal)
     ]
+widths = [len(us)/len(us),
+     len(france)/len(us),
+     len(italy)/len(us),
+     len(spain)/len(us),
+     len(portugal)/len(us)
+    ]
 
 fig, ax = plt.subplots()
 
-plt.bar(x, y)
+plt.bar(x, y, width=widths)
 plt.axhline(100*sum(wine_data_cleaned.greater_than_90)/len(wine_data_cleaned),
             c='r', label="Overall Average")
 
@@ -93,10 +101,16 @@ y = [100*sum(pinot_noir.greater_than_90)/len(pinot_noir),
      100*sum(red_blend.greater_than_90)/len(red_blend),
      100*sum(bordeaux_style_red_blend.greater_than_90)/len(bordeaux_style_red_blend)
     ]
+widths = [len(pinot_noir)/len(pinot_noir),
+     len(chardonnay)/len(pinot_noir),
+     len(cabernet_sauvignon)/len(pinot_noir),
+     len(red_blend)/len(pinot_noir),
+     len(bordeaux_style_red_blend)/len(pinot_noir)
+    ]
 
 fig, ax = plt.subplots()
 
-plt.bar(x,y)
+plt.bar(x, y, width=widths)
 plt.axhline(100*sum(wine_data_cleaned.greater_than_90)/len(wine_data_cleaned),
             c='r', label="Overall Average")
 
