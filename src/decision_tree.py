@@ -8,18 +8,18 @@
 # and a csv with the ranking of all the parameters.  
 
 
-# Usage: python src/decision_tree.py input_file output_file
+# Usage: python src/decision_tree.py input_file output_folder
 # Example: python src/decision_tree.py data/wine_data_cleaned.csv results/
 
 # Python Version 3.7.0
 
-import pandas as pd  #Version 0.23.4
-import numpy as np #Version 1.15.1
-import argparse #Version 1.1
-import matplotlib.pyplot as plt #Version 2.2.3
-import graphviz #Version 0.8.4
-from sklearn.tree import DecisionTreeClassifier, export_graphviz #Version 0.19.2
-from sklearn.model_selection import train_test_split #Version 0.19.2
+import pandas as pd               #Version 0.23.4
+import numpy as np                #Version 1.15.1
+import argparse                   #Version 1.1
+import matplotlib.pyplot as plt   #Version 2.2.3
+import graphviz                   #Version 0.8.4
+from sklearn.tree import DecisionTreeClassifier, export_graphviz  #Version 0.19.2
+from sklearn.model_selection import train_test_split              #Version 0.19.2
 
 
 parser = argparse.ArgumentParser()

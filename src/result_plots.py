@@ -11,13 +11,13 @@
 
 #Python Version 3.7.0
 
-import pandas as pd #Version 0.23.4
+import pandas as pd             #Version 0.23.4
 import matplotlib.pyplot as plt #Version 2.2.3
-import argparse #Version 1.1
+import argparse                 #Version 1.1
 
 parser = argparse.ArgumentParser()
 parser.add_argument('input_file')
-parser.add_argument('output_file')
+parser.add_argument('output_file_prefix')
 args = parser.parse_args()
 
 def main():
@@ -54,7 +54,7 @@ def main():
     plt.tight_layout()
     
     # writes the plots to file, this is the output of the script
-    plt.savefig(args.output_file + "rank_plots.png")
+    plt.savefig(args.output_file_prefix + "rank_plots.png")
     
 
 
