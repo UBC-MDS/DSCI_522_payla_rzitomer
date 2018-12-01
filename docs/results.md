@@ -60,6 +60,46 @@ We ended up using only the following features to predict if a wine would be 90 p
 -   Province
 -   Price
 
+### Summary Statistics of Important Variables
+
+Note that the summary statistics shown are different for categorical and numerical variables. Note that this is based on 129,971 observations.
+
+#### Variety
+
+| Statistic                 | Value      |
+|---------------------------|------------|
+| Unique Values             | 707        |
+| Most Frequent Value       | Pinot Noir |
+| Count of Most Freq. Value | 13,272     |
+
+#### Country
+
+| Statistic                 | Value  |
+|---------------------------|--------|
+| Unique Values             | 43     |
+| Most Frequent Value       | US     |
+| Count of Most Freq. Value | 54,504 |
+
+#### Province
+
+| Statistic                 | Value      |
+|---------------------------|------------|
+| Unique Values             | 425        |
+| Most Frequent Value       | California |
+| Count of Most Freq. Value | 36,247     |
+
+#### Price
+
+| Statistic     | Value |
+|---------------|-------|
+| Mean          | 35.36 |
+| Standard Dev. | 41.02 |
+| Min           | 4     |
+| Median        | 25    |
+| Max           | 3,300 |
+
+### Data Cleaning
+
 We removed the `Title` and `Description` columns because there were so many unique values in these columns relative to the size of the dataset that they wouldn't have been predictive.
 
 We removed the `Taster Name`, `Taster Twitter Handle`, `Winery`, `Designation`, `Region 1`, and `Region 2` columns because we didn't think this would be information that would be accessible to the consumer. Also, for the region columns that information was already more or less captured in a more accessible way in the `country` and the `province` variables.
