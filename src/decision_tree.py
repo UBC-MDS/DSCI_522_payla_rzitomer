@@ -85,6 +85,7 @@ def main():
     # creates a dataframe with feature names and feature ranking
     d = {'predictor': column_names_X, 'rank_value': rank_parameters}
     df_rank = pd.DataFrame(data=d)
+    df_rank['predictor'] = df_rank['predictor'].str.replace("_", " ")
     
     # writes the feature ranking dataframe to the output file
     df_rank.to_csv(args.output_file_prefix + "rank.csv")
