@@ -79,7 +79,7 @@ When we pictured high-quality wine, the first things that popped in our head was
 
 ![](../results/viz_countries.png)
 
-Figure 1. Wine Quality by Country
+Figure 1. Wine Quality by Country. Bar width represents the number of wines from that country in the dataset relative to the US.
 
 As we suspected, wine from France is more likely than average to be given a high-quality rating. Suprisingly, Italian wine is worse than average. Note that the countries are ordered from left to right along the x-axis by how frequently they occur in the dataset. The US and France make more wine than any other country, and they've clearly figured out how to do it well.
 
@@ -103,7 +103,7 @@ What about wine variety? Below we have the five varieties that appear most often
 
 ![](../results/viz_variety.png)
 
-Figure 4. Wine Quality by Variety
+Figure 4. Wine Quality by Variety. Bar width represents the number of wines of that variety in the dataset relative to Pinot Noir.
 
 Pinot Noir fairs particularly well here.
 
@@ -129,7 +129,7 @@ Conclusion
 
 There were 1156 features analyzed in the analysis and the top 20 ranked features are show in figure 7. The features were ranked based on Gini Importance, a feature will be ranked higher if the classes of the split are more homogeneous. Price is the highest ranked parameter with a feature importance value of 0.7569, the next highest ranked feature is the country Austria with a value of 0.0165. The third best predictor is the grape variety Riesling with a feature value of 0.0135. There is a huge difference in the values between the top ranked feature and the second-best feature and less of a difference between the second and third predictor. The top three predictors are much stronger then the rest of the predictors shown in figure 7. All of the top three predictors appear in figure 6, which means they at least appear within depth 3 of the decision tree.
 
-The feature ranking tells us the level of importance that the feature has within the model but does not tell us how the feature effects the model. For example, the feature of country\_Austria is on this list, but without further exploartion we don't know if being from Australia means a wine is more or less likely to receive an excellent rating. The same can be said about the variety\_Riesling. A further analysis on these individual features would help to answer how they effect the model. In many cases, we can pair feature importance with our exploratory analysis to see the direction of these splits; in particular, if the split at the root of the tree - price &lt;= 30.5 - is True then the wine is much more likely to be categorized lower quality. As you can see from figure 3, the majority of the distribution for wine with a rating less than 90 points is between 0 and 30 dollars. Around this point there appears to be a clear splitting point between the two outcome categories, and this is borne out by our model.
+The feature ranking tells us the level of importance that the feature has within the model but does not tell us how the feature effects the model. For example, the feature of country Austria is on this list, but without further exploartion we don't know if being from Australia means a wine is more or less likely to receive an excellent rating. The same can be said about the variety Riesling. A further analysis on these individual features would help to answer how they effect the model. In many cases, we can pair feature importance with our exploratory analysis to see the direction of these splits; in particular, if the split at the root of the tree - price &lt;= 30.5 - is True then the wine is much more likely to be categorized lower quality. As you can see from figure 3, the majority of the distribution for wine with a rating less than 90 points is between 0 and 30 dollars. Around this point there appears to be a clear splitting point between the two outcome categories, and this is borne out by our model.
 
 Based on our analysis the best feature in determining the quality of wine is price. This feature was ranked much higher than the rest of the features. Unfortunately, with this analysis we can not make direct statements like if you buy a wine from Austria it will be excellent, but with the exploratory analysis (figure 2 and figure 3) and decision tree (figure 6) it is reasonable to say if you buy a bottle of wine over $30.50 it has a better chance of being of excellent quality.
 
@@ -137,11 +137,11 @@ Based on our analysis the best feature in determining the quality of wine is pri
 
 Figure 7. Plot of the top 20 features and a zoomed in view of the top features with price removed.
 
-| Feature           | Feature Ranking Value |
-|-------------------|-----------------------|
-| price             | 0.7569                |
-| country\_Austria  | 0.0165                |
-| variety\_Riesling | 0.0135                |
+| Feature          | Feature Ranking Value |
+|------------------|-----------------------|
+| price            | 0.7569                |
+| Country Austria  | 0.0165                |
+| Variety Riesling | 0.0135                |
 
 Table 2. Top three ranked features
 
