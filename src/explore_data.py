@@ -1,14 +1,14 @@
 # explore_data.py
 # Richie Zitomer and Ayla Pearson, Nov 2018
 #
-# This script loads in the data, gets rid of irrelevant features,
-# makes dummy variables, makes target variable, and outputs the
-# cleaned dataframe to a csv.
+# This script loads in the clean data, explores and plots important
+# features, and outputs those plots so that they can be used in our
+# final report.
 #
 # Usage: python src/explore_data.py input_file output_file_prefix
 # Example usage: python src/explore_data.py 'data/wine_data_cleaned.csv' 'results/viz_'
 
-import pandas as pd              # Version 0.23.4
+import pandas as pd   # Version 0.23.4
 import argparse                  # Version 1.1
 import matplotlib.pyplot as plt  # Version 2.2.3
 
