@@ -30,4 +30,5 @@ clean :
 	rm -f results/viz_*
 	rm -f results/model_*
 	rm -f results/results_*
-	rm -f doc/results.md doc/results.html
+	rm -f docs/results.md
+	rm -f docs/results.html
