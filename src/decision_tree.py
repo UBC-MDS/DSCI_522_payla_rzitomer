@@ -9,7 +9,7 @@
 
 
 # Usage: python src/decision_tree.py input_file output_file
-# Example: python src/decision_tree.py data/wine_data_cleaned.csv results/rank.csv
+# Example: python src/decision_tree.py data/wine_data_cleaned.csv results/
 
 # Python Version 3.7.0
 
@@ -24,7 +24,7 @@ from sklearn.model_selection import train_test_split #Version 0.19.2
 
 parser = argparse.ArgumentParser()
 parser.add_argument('input_file')
-parser.add_argument('output_file')
+parser.add_argument('output_file_prefix')
 args = parser.parse_args()
 
 
@@ -59,7 +59,7 @@ def main():
     plt.ylabel("Accuracy")
     plt.legend()
     plt.title("Decision Tree Accuracies from Depth 2 to 50")
-    plt.savefig("results/depth_decision.png");
+    plt.savefig(args.output_file_prefix + "depth_decision.png");
     
     #finds the depth with the highest accurac
     max_test_accuracy = depths[np.argmax(test_accuracy)]
@@ -77,7 +77,7 @@ def main():
 
     graph = graphviz.Source(dot_data) 
     graph.format = 'png'
-    graph.render("decision_tree_depth_3", directory = 'results', view=True) 
+    graph.render("decision_tree_depth_3", directory = args.output_file_prefix, view=True) 
     
     # creates list of feature ranking values
     rank_parameters = model_final.feature_importances_
@@ -87,7 +87,7 @@ def main():
     df_rank = pd.DataFrame(data=d)
     
     # writes the feature ranking dataframe to the output file
-    df_rank.to_csv(args.output_file)
+    df_rank.to_csv(args.output_file_prefix + "rank.csv")
     
 
 
