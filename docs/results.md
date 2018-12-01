@@ -78,6 +78,8 @@ Note that the summary statistics shown are different for categorical and numeric
 | Most Frequent Value       | Pinot Noir |
 | Count of Most Freq. Value | 13,272     |
 
+Table 2. Summary statistics by wine variety.
+
 #### Country
 
 | Statistic                 | Value  |
@@ -86,6 +88,8 @@ Note that the summary statistics shown are different for categorical and numeric
 | Most Frequent Value       | US     |
 | Count of Most Freq. Value | 54,504 |
 
+Table 3. Summary statistics by country.
+
 #### Province
 
 | Statistic                 | Value      |
@@ -93,6 +97,8 @@ Note that the summary statistics shown are different for categorical and numeric
 | Unique Values             | 425        |
 | Most Frequent Value       | California |
 | Count of Most Freq. Value | 36,247     |
+
+Table 4. Summary statistics by province.
 
 #### Price
 
@@ -103,6 +109,8 @@ Note that the summary statistics shown are different for categorical and numeric
 | Min           | 4     |
 | Median        | 25    |
 | Max           | 3,300 |
+
+Table 5. Summary statistics by price.
 
 ### Data Cleaning
 
@@ -189,7 +197,7 @@ Figure 7. Plot of the top 20 features and a zoomed in view of the top features w
 | Country Austria  | 0.0165                |
 | Variety Riesling | 0.0135                |
 
-Table 2. Top three ranked features
+Table 6. Top three ranked features
 
 Limitations
 ===========
