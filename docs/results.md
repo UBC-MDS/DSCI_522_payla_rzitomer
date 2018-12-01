@@ -32,6 +32,12 @@ Table 1. Rating scale from WineEnthusiast. Products deemed Unacceptable (receivi
 
 We knew that we were going to use these ratings to determine what features make a wine particularly likely to be good. We originally were going to fit a model that would predict whether or not a wine was "Classic," but in the original dataset &lt;.1% of wine was categorized as such, so we knew we would have a class imbalance problem. We considered fitting a model to predict whether a wine's rating would be above or below the median score in the dataset, which would ensure we would never have a class imbalance problem and would help us understand what makes a wine better or worse than average. However, we ultimately decided to predict whether or not a wine was greater than or equal to 90. This has the advantage of both mapping to WineEnthusiast's categorical ratings (the model will predict whether a wine was at least "Excellent"" or not) and also splitting the classes fairly evenly (~38% of wine in the original dataset had a rating &gt;= 90).
 
+![](../results/viz_class_frequencies.png)
+
+Figure 1. The frequencies of each of the categorical wine ratings in our dataset.
+
+As you can see above, the classes are fairly uneven (WineEnthusiast rarely gives a rating of 'Classic' or'Acceptable').
+
 Data Cleaning and Feature Selection
 ===================================
 
@@ -119,7 +125,7 @@ When we pictured high-quality wine, the first things that popped in our head was
 
 ![](../results/viz_countries.png)
 
-Figure 1. Wine Quality by Country. Bar width represents the number of wines from that country in the dataset relative to the US.
+Figure 2. Wine Quality by Country. Bar width represents the number of wines from that country in the dataset relative to the US.
 
 As we suspected, wine from France is more likely than average to be given a high-quality rating. Suprisingly, Italian wine is worse than average. Note that the countries are ordered from left to right along the x-axis by how frequently they occur in the dataset. The US and France make more wine than any other country, and they've clearly figured out how to do it well.
 
@@ -127,7 +133,7 @@ The other big factor that we suspected would correlate with wine quality was pri
 
 ![](../results/viz_price_boxplot.png)
 
-Figure 2. Boxplot of Wine Price Segmented by Quality
+Figure 3. Boxplot of Wine Price Segmented by Quality
 
 As expected, the average price of the higher-quality bottles is much higher than the average price of the lower-quality ones. It is interesting that, while lower-quality wine is almost always cheap, higher-quality wine has a much wider range of potential prices. While there are outlier bottles that are thousands of dollars, 25% of the good stuff is under $40. This led us to the question: if you find a cheap bottle of wine that WineEnthusiast has rated, is there a good chance its well-reviewed?
 
@@ -135,7 +141,7 @@ Below we have a histogram for all wine cheaper than $100, again segemented by ra
 
 ![](../results/viz_price_less_than_100_hist.png)
 
-Figure 3. Histogram of Cheaper Wine Prices Segmented by Quality
+Figure 4. Histogram of Cheaper Wine Prices Segmented by Quality
 
 As you can see, if you select a random bottle of cheap wine, particularly one under $40, its very unlikely that it will be a high-quality one. Even though there is a good deal of cheap, high-quality wine, because almost all of the lower-quality wine costs between $10 and $40, lower-quality wine represents the vast majority of bottles in that price range.
 
@@ -143,7 +149,7 @@ What about wine variety? Below we have the five varieties that appear most often
 
 ![](../results/viz_variety.png)
 
-Figure 4. Wine Quality by Variety. Bar width represents the number of wines of that variety in the dataset relative to Pinot Noir.
+Figure 5. Wine Quality by Variety. Bar width represents the number of wines of that variety in the dataset relative to Pinot Noir.
 
 Pinot Noir fairs particularly well here.
 
@@ -156,13 +162,13 @@ The model used was a decision tree and the software was the DecisionTreeClassifi
 
 ![](../results/model_depth_decision.png)
 
-Figure 5. Results of the test accuracy ranging from depth 2 to 50. Max value depth was chosen as the hyperparameter for the model.
+Figure 6. Results of the test accuracy ranging from depth 2 to 50. Max value depth was chosen as the hyperparameter for the model.
 
 To visualize the decision tree an image of depth 3 was generated. The decision tree is too large to print the entire model to an image, so depth 3 was choose as an optimal size. Depth 4 was too large to fit within the report and depth 2 only has feature splits on price.
 
 ![](../results/model_decision_tree_depth_3.png)
 
-Figure 6. Decision tree at depth 3
+Figure 7. Decision tree at depth 3
 
 Conclusion
 ==========
