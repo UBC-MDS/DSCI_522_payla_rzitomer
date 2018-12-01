@@ -1,11 +1,10 @@
 # decision_tree.py
 # Richie Zitomer and Ayla Pearson, Nov 2018
 #
-# This script loads in the cleaned data and trains the decision tree model,
-# determines the optimal depth based on maximum test accuracy, and
-# runs the final model on all the data. 
-# It outputs the graph of test accuracy vs max depth, an image of the decision tree with depth 3,
-# and a csv with the ranking of all the parameters.  
+# This script loads in the cleaned data, trains the decision tree model, determines 
+# the optimal depth based on maximum test accuracy, and re-runs the final model on all 
+# the data. It outputs the graph of training and test accuracy vs max depth, an image 
+# of the decision tree with depth 3, and a csv with the feature ranking of all the parameters.  
 
 
 # Usage: python src/decision_tree.py input_file output_folder
