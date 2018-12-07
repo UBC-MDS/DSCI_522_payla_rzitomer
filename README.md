@@ -7,7 +7,14 @@ WineEnthusiast<sup>1</sup> is a magazine that reviews wines and provides a score
 
 ## Running the analysis
 
-To reproduce this analysis, run the following:
+To run this analysis using docker, pull our docker image here: https://hub.docker.com/r/rzitomer/top_predictors_for_great_wine/, clone/download the repository, and then run the following command (filling in PATH_ON_YOUR_COMPUTER with the absolute path of the root of this project on your computer):
+```{bash}
+docker run --rm  -v PATH_ON_YOUR_COMPUTER:/home/top_predictors_for_great_wine/ --memory=3g rzitomer/top_predictors_for_great_wine make -C '/home/top_predictors_for_great_wine/'
+```
+
+Note that you might have to increase the max memory allocated to docker to 3.0 GiB (its set at 2.0 GiB by default) to run this analysis. The reason so much memory is required is that the cleaned data file is quite large and so the `pd.read_csv` call is computationally expensive.
+
+To reproduce this analysis without using our docker image, run the following from the root directory:
 ```{bash}
 make all
 ```
@@ -23,7 +30,7 @@ Rscript -e "rmarkdown::render('output_file')"        # This line renders our fin
 Example of the scripts with the file names from the repo:    
 
 ```{bash}
-python src/load_data.py data/winemag-data-130k-v2.csv.zip data/wine_data_cleaned.csv results/viz_class_frequencies 
+python src/load_data.py data/winemag-data-130k-v2.csv.zip data/wine_data_cleaned.csv results/viz_class_frequencies
 python src/explore_data.py data/wine_data_cleaned.csv results/viz_    
 python src/decision_tree.py data/wine_data_cleaned.csv results/model_    
 python src/result_plots.py results/model_rank.csv results/results_     
