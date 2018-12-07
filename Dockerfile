@@ -1,6 +1,7 @@
 # Docker file for Top_Predictors_for_Great_Wine
 # Ayla Pearson and Richie Zitomer Dec, 2018
 
+# Pulling from Anaconda
 FROM continuumio/anaconda3
 
 RUN conda uninstall matplotlib
