@@ -57,5 +57,7 @@ RUN apt-get update \
 	&& rm -rf /tmp/downloaded_packages/ /tmp/*.rds \
 	&& rm -rf /var/lib/apt/lists/*
 
-# Install Rmarkdown
+# Install necessary R packages
 RUN Rscript -e "install.packages('rmarkdown')"
+RUN Rscript -e "install.packages('tidyverse')"
+RUN Rscript -e "install.packages('knitr')"
