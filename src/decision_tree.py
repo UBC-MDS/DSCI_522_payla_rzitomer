@@ -71,7 +71,8 @@ def main():
                              feature_names= column_names_X ,  
                              class_names=["Rating less than 90", "Rating greater than 90"],  
                              filled=False, rounded=True,  
-                             special_characters=True, 
+                             special_characters=True,
+                             rotate = True,
                              max_depth = 3)  
 
     graph = graphviz.Source(dot_data) 

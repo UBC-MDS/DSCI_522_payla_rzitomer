@@ -20,6 +20,8 @@ parser.add_argument('input_file')
 parser.add_argument('output_file_prefix')
 args = parser.parse_args()
 
+
+
 def main():
     
     # reads in feature ranking csv
@@ -32,34 +34,45 @@ def main():
     top_20 = sorted_by_rank[:20]
     top_19 = top_20[1:20]
     
+    # creates dataframe of top 3 results and writes it to a csv 
+    top_3 = top_20[:3]
+    top_3.to_csv(args.output_file_prefix + "top3.csv")
+    
+    
     # creates bar plot of the top 20 and top 19 features, it creates them side-by-side as subplots
-    fig, ax = plt.subplots(ncols=2, figsize=(14,6))
+    fig, ax = plt.subplots(ncols=1, nrows=2, figsize=(8,9))
     top_20_plot = top_20.plot.bar(y='rank_value', 
                                  x='predictor',  
                                  color = "maroon", 
                                  legend = None, 
                                  ax=ax[0], 
-                                 title = "Top 20 Parameters for Predicting a WineEnthusiast rating")
+                                 title = "Top 20 Parameters")
     top_19_plot = top_19.plot.bar(y='rank_value', 
                                   x='predictor', 
                                   color = "maroon", 
                                   legend = None, 
                                   ax=ax[1], 
-                                  title = "Zoomed View: Top 20 Predictors with Price Removed")
+                                  title = "Zoomed View: Top 20 Features with Price Removed")
     
+     
     top_20_plot.set_ylabel("Rank Value")
-    top_20_plot.set_xlabel("Predictors")
+    top_20_plot.set_xlabel("")
     top_19_plot.set_ylabel("Rank Value")
-    top_19_plot.set_xlabel("Predictors")
+    top_19_plot.set_xlabel("")
     plt.tight_layout()
+    plt.rc('axes', titlesize=24)     # fontsize title
+    plt.rc('axes', labelsize= 17)    # fontsize axis labels
+    plt.rc('xtick', labelsize=17)    # fontsize xtick labels
+    plt.rc('ytick', labelsize=13)    # fontsize ytick labels
+    
+    
+    
     
     # writes the plots to file, this is the output of the script
     plt.savefig(args.output_file_prefix + "rank_plots.png")
     
 
-
 if __name__ == "__main__":
     main()
-
 
 

@@ -191,11 +191,11 @@ Based on our analysis the best feature in determining the quality of wine is pri
 
 Figure 7. Plot of the top 20 features and a zoomed in view of the top features with price removed.
 
-| Feature          | Feature Ranking Value |
-|------------------|-----------------------|
-| price            | 0.7569                |
-| Country Austria  | 0.0165                |
-| Variety Riesling | 0.0135                |
+| Predictor        |  Rank Value|
+|:-----------------|-----------:|
+| price            |      0.7475|
+| country Austria  |      0.0162|
+| variety Riesling |      0.0133|
 
 Table 6. Top three ranked features
 
