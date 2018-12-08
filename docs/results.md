@@ -36,7 +36,7 @@ We knew that we were going to use these ratings to determine what features make 
 
 Figure 1. The frequencies of each of the categorical wine ratings in our dataset.
 
-As you can see above, the classes are fairly uneven (WineEnthusiast rarely gives a rating of 'Classic' or'Acceptable').
+As you can see above, the classes are fairly uneven (WineEnthusiast rarely gives a rating of 'Classic' or 'Acceptable').
 
 Data Cleaning and Feature Selection
 ===================================
