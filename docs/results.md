@@ -36,7 +36,7 @@ We knew that we were going to use these ratings to determine what features make 
 
 Figure 1. The frequencies of each of the categorical wine ratings in our dataset.
 
-As you can see above, the classes are fairly uneven (WineEnthusiast rarely gives a rating of 'Classic' or'Acceptable').
+As you can see above, the classes are fairly uneven (WineEnthusiast rarely gives a rating of 'Classic' or 'Acceptable').
 
 Data Cleaning and Feature Selection
 ===================================
@@ -73,42 +73,42 @@ Note that the summary statistics shown are different for categorical and numeric
 #### Variety
 
 | Statistic                 | Value      |
-|---------------------------|------------|
+|:--------------------------|:-----------|
 | Unique Values             | 707        |
 | Most Frequent Value       | Pinot Noir |
-| Count of Most Freq. Value | 13,272     |
+| Count of Most Freq. Value | 13272      |
 
 Table 2. Summary statistics by wine variety.
 
 #### Country
 
-| Statistic                 | Value  |
-|---------------------------|--------|
-| Unique Values             | 43     |
-| Most Frequent Value       | US     |
-| Count of Most Freq. Value | 54,504 |
+| Statistic                 | Value |
+|:--------------------------|:------|
+| Unique Values             | 43    |
+| Most Frequent Value       | US    |
+| Count of Most Freq. Value | 54504 |
 
 Table 3. Summary statistics by country.
 
 #### Province
 
 | Statistic                 | Value      |
-|---------------------------|------------|
+|:--------------------------|:-----------|
 | Unique Values             | 425        |
 | Most Frequent Value       | California |
-| Count of Most Freq. Value | 36,247     |
+| Count of Most Freq. Value | 36247      |
 
 Table 4. Summary statistics by province.
 
 #### Price
 
-| Statistic     | Value |
-|---------------|-------|
-| Mean          | 35.36 |
-| Standard Dev. | 41.02 |
-| Min           | 4     |
-| Median        | 25    |
-| Max           | 3,300 |
+| Statistic |      Value|
+|:----------|----------:|
+| Mean      |    35.3634|
+| Std Dev.  |    41.0222|
+| Min       |     4.0000|
+| Median    |    25.0000|
+| Max       |  3300.0000|
 
 Table 5. Summary statistics by price.
 
@@ -193,9 +193,9 @@ Figure 7. Plot of the top 20 features and a zoomed in view of the top features w
 
 | Predictor        |  Rank Value|
 |:-----------------|-----------:|
-| price            |      0.7475|
-| country Austria  |      0.0162|
-| variety Riesling |      0.0133|
+| price            |      0.7955|
+| country Austria  |      0.0176|
+| variety Riesling |      0.0145|
 
 Table 6. Top three ranked features
 

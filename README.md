@@ -12,21 +12,25 @@ The dataset<sup>2</sup> used in this analysis is from [Kaggle](https://www.kaggl
 
 This analysis has both a dockerfile and makefile and can be run reproducibility from either.
 
-To run this analysis using docker, pull our docker image here: https://hub.docker.com/r/rzitomer/top_predictors_for_great_wine/, clone/download the repository, and then run the following command (filling in PATH_ON_YOUR_COMPUTER with the absolute path of the root of this project on your computer):
+To run this analysis using docker, pull our docker image here: https://hub.docker.com/r/rzitomer/top_predictors_for_great_wine/, clone/download the repository, and then run the following command (filling in PATH_ON_YOUR_COMPUTER with the absolute path of the root of this project on your computer) from the root directory of this project:
 ```{bash}
 docker run --rm  -v PATH_ON_YOUR_COMPUTER:/home/top_predictors_for_great_wine/ --memory=3g rzitomer/top_predictors_for_great_wine make -C '/home/top_predictors_for_great_wine/'
 ```
 
 Note that you might have to increase the max memory allocated to docker to 3.0 GiB (its set at 2.0 GiB by default) to run this analysis. The reason so much memory is required is that the cleaned data file is quite large and so the `pd.read_csv` call is computationally expensive.
 
+To clean up the analysis type:
+```{bash}
+docker run --rm  -v PATH_ON_YOUR_COMPUTER:/home/top_predictors_for_great_wine/ --memory=3g rzitomer/top_predictors_for_great_wine make -C '/home/top_predictors_for_great_wine/' clean
+```
 
-To reproduce this analysis with our makefile, clone or download the repository and then run the following from the root directory:
+To reproduce this analysis with our makefile, clone or download the repository and then run the following from the root directory of this project:
 ```{bash}
 make all
 ```
 `make all` will run the scripts in the required order to reproduce the same results and analysis as presented. A list of the dependencies are below and in each script in the src directory.
 
-To remove all the outputs and run the analysis clean run this from the root directory:
+To remove all the outputs and run the analysis clean run this from the root directory of this project:
 ```{bash}
 make clean
 ```

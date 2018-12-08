@@ -5,8 +5,8 @@
 # makes dummy variables, makes target variable, and outputs the
 # cleaned dataframe to a csv.
 #
-# Usage: python src/load_data.py input_file output_file viz_file
-# Example usage: python src/load_data.py 'data/winemag-data-130k-v2.csv.zip' 'data/wine_data_cleaned.csv' 'results/viz_class_frequencies.png'
+# Usage: python src/load_data.py input_file output_file viz_file describe_prefix
+# Example usage: python src/load_data.py data/winemag-data-130k-v2.csv.zip data/wine_data_cleaned.csv results/viz_class_frequencies.png results/describe_
 
 import pandas as pd   # Version 0.23.4
 import argparse       # Version 1.1
@@ -16,6 +16,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument('input_file')
 parser.add_argument('output_file')
 parser.add_argument('viz_file')
+parser.add_argument('describe_prefix')
 args = parser.parse_args()
 
 
@@ -40,6 +41,35 @@ def main():
     ax.set_title("Counts of WineEnthusiast Ratings by Class")
     plt.xticks(rotation=90)
     plt.savefig(args.viz_file, bbox_inches="tight")
+
+    # Output csvs describing the variables
+    variety_describe = wine_data.variety.describe()
+    variety_describe = variety_describe[['unique', 'top', 'freq']]
+    variety_describe.index = ['Unique Values', 'Most Frequent Value', 'Count of Most Freq. Value']
+    variety_describe = variety_describe.reset_index()
+    variety_describe.columns = ['Statistic', 'Value']
+    variety_describe.to_csv(args.describe_prefix + 'variety.csv', index=False)
+
+    country_describe = wine_data.country.describe()
+    country_describe = country_describe[['unique', 'top', 'freq']]
+    country_describe.index = ['Unique Values', 'Most Frequent Value', 'Count of Most Freq. Value']
+    country_describe = country_describe.reset_index()
+    country_describe.columns = ['Statistic', 'Value']
+    country_describe.to_csv(args.describe_prefix + 'country.csv', index=False)
+
+    province_describe = wine_data.province.describe()
+    province_describe = province_describe[['unique', 'top', 'freq']]
+    province_describe.index = ['Unique Values', 'Most Frequent Value', 'Count of Most Freq. Value']
+    province_describe = province_describe.reset_index()
+    province_describe.columns = ['Statistic', 'Value']
+    province_describe.to_csv(args.describe_prefix + 'province.csv', index=False)
+
+    price_describe = wine_data.price.describe()
+    price_describe = price_describe[['mean', 'std', 'min', '50%', 'max']]
+    price_describe.index = ['Mean', 'Std Dev.', 'Min', 'Median', 'Max']
+    price_describe = price_describe.reset_index()
+    price_describe.columns = ['Statistic', 'Value']
+    price_describe.to_csv(args.describe_prefix + 'price.csv', index=False)
 
     # Feature Engineering
     wine_data_cleaned_with_dummies = pd.get_dummies(wine_data_cleaned)
