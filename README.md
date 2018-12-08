@@ -11,7 +11,14 @@ When buying a new bottle of wine you are always wondering will this wine be any 
 
 ## Running the analysis
 
-To reproduce this analysis, run the following:
+To run this analysis using docker, pull our docker image here: https://hub.docker.com/r/rzitomer/top_predictors_for_great_wine/, clone/download the repository, and then run the following command (filling in PATH_ON_YOUR_COMPUTER with the absolute path of the root of this project on your computer):
+```{bash}
+docker run --rm  -v PATH_ON_YOUR_COMPUTER:/home/top_predictors_for_great_wine/ --memory=3g rzitomer/top_predictors_for_great_wine make -C '/home/top_predictors_for_great_wine/'
+```
+
+Note that you might have to increase the max memory allocated to docker to 3.0 GiB (its set at 2.0 GiB by default) to run this analysis. The reason so much memory is required is that the cleaned data file is quite large and so the `pd.read_csv` call is computationally expensive.
+
+To reproduce this analysis without using our docker image, run the following from the root directory:
 ```{bash}
 make all
 ```
