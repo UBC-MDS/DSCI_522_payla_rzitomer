@@ -79,44 +79,39 @@ Note that the summary statistics shown are different for categorical and numeric
 
 ####Variety 
 
-|Statistic| Value|
-|---------|-------|
-|Unique Values| 707|
-|Most Frequent Value|Pinot Noir|
-|Count of Most Freq. Value| 13,272|
+```{r, table2 output}
+table2 <- read_csv('../results/describe_variety.csv') 
+kable(table2)
+```
 
 Table 2. Summary statistics by wine variety.
 
 ####Country 
 
-|Statistic| Value|
-|---------|-------|
-|Unique Values| 43|
-|Most Frequent Value|US|
-|Count of Most Freq. Value| 54,504|
+```{r, table3 output}
+table3 <- read_csv('../results/describe_country.csv') 
+kable(table3)
+```
 
 Table 3. Summary statistics by country.
 
 
 ####Province 
 
-|Statistic| Value|
-|---------|-------|
-|Unique Values| 425|
-|Most Frequent Value|California|
-|Count of Most Freq. Value|36,247|
+```{r, table4 output}
+table4 <- read_csv('../results/describe_province.csv') 
+kable(table4)
+```
 
 Table 4. Summary statistics by province.
 
 ####Price 
 
-|Statistic| Value|
-|---------|-------|
-|Mean| 35.36|
-|Standard Dev.|41.02|
-|Min| 4|
-|Median|25|
-|Max|3,300|
+```{r, table5 output}
+table5 <- read_csv('../results/describe_price.csv') %>% 
+  mutate(Value = round(Value, 4))  
+kable(table5)
+```
 
 Table 5. Summary statistics by price.
 
