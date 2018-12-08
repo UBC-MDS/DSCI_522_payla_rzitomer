@@ -126,3 +126,7 @@ def main():
     plt.xticks(rotation=90)
 
     plt.savefig(args.output_file_prefix + 'variety.png', bbox_inches="tight")
+
+
+if __name__ == '__main__':
+    main()
