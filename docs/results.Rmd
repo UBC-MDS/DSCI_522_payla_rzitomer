@@ -5,6 +5,16 @@ date: "November 23, 2018"
 output: github_document
 ---
 
+```{r setup,echo=FALSE, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message=FALSE, warning=FALSE)
+```
+
+```{r, libraries}
+library(tidyverse)
+library(knitr)
+```
+
+
 # Introduction
 
 ```"Wine is bottled poetry" -Robert Louis Stevenson```<sup>1</sup>
@@ -170,9 +180,7 @@ Figure 6. Results of the test accuracy ranging from depth 2 to 50. Max value dep
 
 To visualize the decision tree an image of depth 3 was generated. The decision tree is too large to print the entire model to an image, so depth 3 was choose as an optimal size. Depth 4 was too large to fit within the report and depth 2 only has feature splits on price. 
 
-<div style="width:33cm; height:12cm">
 ![](../results/model_decision_tree_depth_3.png)
-</div>
 
 Figure 7. Decision tree at depth 3
 
@@ -188,11 +196,14 @@ Based on our analysis the best feature in determining the quality of wine is pri
 
 Figure 7. Plot of the top 20 features and a zoomed in view of the top features with price removed.
 
-| Feature | Feature Ranking Value |
-| --------- | -------------- |
-| price     |       	0.7569 |
-| Country Austria |	  0.0165 |
-| Variety Riesling |	0.0135 |
+```{r, table output}
+table6 <- read_csv('../results/results_top3.csv') %>% 
+  select("predictor","rank_value") %>% 
+  mutate(rank_value = round(rank_value, 4)) %>% 
+  rename(Predictor = predictor) %>% 
+  rename("Rank Value" = rank_value)
+kable(table6)
+```
 
 Table 6. Top three ranked features
 
