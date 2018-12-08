@@ -33,6 +33,7 @@ def main():
 
     cat_ratings = wine_data_cleaned.points.apply(get_price_cats)
     cat_ratings_freq = cat_ratings.value_counts()
+    cat_ratings_freq = cat_ratings_freq.loc[['Classic', 'Superb', 'Excellent', 'Very Good', 'Good ', 'Acceptable']]
     plt.bar(cat_ratings_freq.index, cat_ratings_freq)
     ax.set_ylabel('Count')
     ax.set_xlabel('WineEnthusiast Rating')
