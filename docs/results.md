@@ -193,9 +193,9 @@ Figure 7. Plot of the top 20 features and a zoomed in view of the top features w
 
 | Predictor        |  Rank Value|
 |:-----------------|-----------:|
-| price            |      0.7570|
-| country Austria  |      0.0165|
-| variety Riesling |      0.0136|
+| price            |      0.6950|
+| country Austria  |      0.0145|
+| variety Riesling |      0.0119|
 
 Table 6. Top three ranked features
 
